@@ -1,0 +1,28 @@
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\bin\Debug\Registro Terapeutico.exe.config
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\bin\Debug\Registro Terapeutico.exe
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\bin\Debug\Registro Terapeutico.pdb
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csprojAssemblyReference.cache
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.FormLogin.resources
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Properties.Resources.resources
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csproj.GenerateResource.cache
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csproj.CoreCompileInputs.cache
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.exe
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.pdb
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.menu.resources
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.registroTerapeutico.resources
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.historiaClinica.resources
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Historia_Clinica.resources
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.menuReportes.resources
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Registro_Terapia.resources
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Registro_Usuario.resources
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Reporte_Diagnostico_Paciente.resources
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Terapias_por_Fecha.resources
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Reporte_Preferencias.resources
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\bin\Debug\Interop.WMPLib.dll
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Interop.WMPLib.dll
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csproj.ResolveComReference.cache
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.preferencias.resources
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Video.resources
+C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.seleccionarPreferencia.resources

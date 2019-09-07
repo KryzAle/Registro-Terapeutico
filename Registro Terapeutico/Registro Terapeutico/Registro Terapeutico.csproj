@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{410525FD-4573-4DAE-ADB4-D2DA68FFC6A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Registro_Terapeutico</RootNamespace>
+    <AssemblyName>Registro Terapeutico</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Historia Clinica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Historia Clinica.Designer.cs">
+      <DependentUpon>Historia Clinica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="historiaClinica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="historiaClinica.Designer.cs">
+      <DependentUpon>historiaClinica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HogarAncianosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HogarAncianosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HogarAncianosDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HogarAncianosDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HogarAncianosDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HogarAncianosDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuReportes.Designer.cs">
+      <DependentUpon>menuReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="preferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="preferencias.Designer.cs">
+      <DependentUpon>preferencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registro Terapia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro Terapia.Designer.cs">
+      <DependentUpon>Registro Terapia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro Usuario.Designer.cs">
+      <DependentUpon>Registro Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registroTerapeutico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registroTerapeutico.Designer.cs">
+      <DependentUpon>registroTerapeutico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte Diagnostico Paciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte Diagnostico Paciente.Designer.cs">
+      <DependentUpon>Reporte Diagnostico Paciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Preferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Preferencias.Designer.cs">
+      <DependentUpon>Reporte_Preferencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seleccionarPreferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seleccionarPreferencia.Designer.cs">
+      <DependentUpon>seleccionarPreferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Terapias por Fecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Terapias por Fecha.Designer.cs">
+      <DependentUpon>Terapias por Fecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Video.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Video.Designer.cs">
+      <DependentUpon>Video.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Historia Clinica.resx">
+      <DependentUpon>Historia Clinica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="historiaClinica.resx">
+      <DependentUpon>historiaClinica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuReportes.resx">
+      <DependentUpon>menuReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="preferencias.resx">
+      <DependentUpon>preferencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registro Terapia.resx">
+      <DependentUpon>Registro Terapia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro Usuario.resx">
+      <DependentUpon>Registro Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registroTerapeutico.resx">
+      <DependentUpon>registroTerapeutico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte Diagnostico Paciente.resx">
+      <DependentUpon>Reporte Diagnostico Paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Preferencias.resx">
+      <DependentUpon>Reporte_Preferencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seleccionarPreferencia.resx">
+      <DependentUpon>seleccionarPreferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Terapias por Fecha.resx">
+      <DependentUpon>Terapias por Fecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video.resx">
+      <DependentUpon>Video.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HogarAncianosDataSet.xsc">
+      <DependentUpon>HogarAncianosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HogarAncianosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HogarAncianosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HogarAncianosDataSet.xss">
+      <DependentUpon>HogarAncianosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HogarAncianosDataSet1.xsc">
+      <DependentUpon>HogarAncianosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HogarAncianosDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HogarAncianosDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HogarAncianosDataSet1.xss">
+      <DependentUpon>HogarAncianosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HogarAncianosDataSet2.xsc">
+      <DependentUpon>HogarAncianosDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HogarAncianosDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HogarAncianosDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HogarAncianosDataSet2.xss">
+      <DependentUpon>HogarAncianosDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\LOGOHOGARANCIANOS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\user.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\contras.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\salir.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\examen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\historial-medico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\examen %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\portapapeles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\hombre-de-pie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\reportar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\fisioterapia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\barra-con-pesas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\guardar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\agregar-boton-dentro-del-circulo-negro %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\flecha-hacia-atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\editar.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\reproductor-de-musica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
