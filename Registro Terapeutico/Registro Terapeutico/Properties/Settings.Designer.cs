@@ -26,8 +26,8 @@ namespace Registro_Terapeutico.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=KRYZ_ALE\\SQLEXPRESS;Initial Catalog=HogarAncianos;Persist Security In" +
-            "fo=True;User ID=sa;Password=root")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-5HTVFE3;Initial Catalog=HogarAncianos;Integrated Security=Tru" +
+            "e")]
         public string Conexion {
             get {
                 return ((string)(this["Conexion"]));

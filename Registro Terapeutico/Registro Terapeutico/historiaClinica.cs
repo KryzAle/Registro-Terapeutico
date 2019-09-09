@@ -53,7 +53,7 @@ namespace Registro_Terapeutico
 
         private void Registro_btn_Click(object sender, EventArgs e)
         {
-            string cadena= "insert into Paciente(nombre_pac, apellido_pac, cedula_pac, fecha_nacimiento_pac, fecha_registro_pac, antecedentes_pac, dolor_pac, marcha_pac, muscular_pac, neurologica_pac, articular_pac, discapacidad_pac, impresion_diagnostica_pac) values('"+nombre_txt.Text+"', '"+apellido_txt.Text+"', '"+cedula_txt.Text+"', '"+fecha_nacimiento.Value+"', '"+fecha_registro.Value+"', '"+antecedentes_txt.Text+"',"+getDolor()+", '"+getMarcha()+"', '"+muscular_txt.SelectedItem+"', '"+neurologicas_txt.SelectedItem+"', '"+articular_txt.Text+"', '"+discapacidad_txt.Text+"', '"+impresion_diagnostica.Text+"')";
+            string cadena= "insert into Paciente(nombre_pac, apellido_pac, cedula_pac, fecha_nacimiento_pac, fecha_registro_pac, antecedentes_pac, dolor_pac, marcha_pac, muscular_pac, neurologica_pac, articular_pac, discapacidad_pac, impresion_diagnostica_pac) values('"+nombre_txt.Text+" "+"', '"+apellido_txt.Text+"', '"+cedula_txt.Text+"', '"+fecha_nacimiento.Value+"', '"+fecha_registro.Value+"', '"+antecedentes_txt.Text+"',"+getDolor()+", '"+getMarcha()+"', '"+muscular_txt.SelectedItem+"', '"+neurologicas_txt.SelectedItem+"', '"+articular_txt.Text+"', '"+discapacidad_txt.Text+"', '"+impresion_diagnostica.Text+"')";
             SqlCommand sql = new SqlCommand(cadena, conn);
             sql.ExecuteNonQuery();
             MessageBox.Show("Registro Guardado Correctamente");
@@ -84,6 +84,11 @@ namespace Registro_Terapeutico
         private void Cancelar_btn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void HistoriaClinica_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

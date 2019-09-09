@@ -26,3 +26,92 @@ C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Deb
 C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.preferencias.resources
 C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Video.resources
 C:\Users\Kryz Ale\source\repos\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.seleccionarPreferencia.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Registro Terapeutico.exe.config
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Registro Terapeutico.exe
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Registro Terapeutico.pdb
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\EnvDTE.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\stdole.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.MSXML.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Interop.WMPLib.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\AxInterop.WMPLib.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csprojAssemblyReference.cache
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Interop.WMPLib.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\AxInterop.WMPLib.dll
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csproj.ResolveComReference.cache
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.FormLogin.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Historia_Clinica.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.historiaClinica.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.menu.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.menuReportes.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.preferencias.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Properties.Resources.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Registro_Terapia.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Registro_Usuario.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.registroTerapeutico.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Reporte_Diagnostico_Paciente.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Reporte_Preferencias.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.seleccionarPreferencia.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Terapias_por_Fecha.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Video.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csproj.GenerateResource.cache
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csproj.CoreCompileInputs.cache
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csproj.CopyComplete
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.exe
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.pdb
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\RdlCompile.cache
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\RdlCompile.compiled
