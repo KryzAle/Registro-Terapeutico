@@ -176,7 +176,7 @@ namespace Registro_Terapeutico
         private void HistoriaClinica_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'hogarAncianosDataSet3.Paciente' Puede moverla o quitarla según sea necesario.
-            this.pacienteTableAdapter.Fill(this.hogarAncianosDataSet3.Paciente);
+            this.pacienteTableAdapter.Fill(this.hogarAncianosDataSet3.Paciente1);
 
         }
 
@@ -239,7 +239,7 @@ namespace Registro_Terapeutico
         {
             try
             {
-                this.pacienteTableAdapter.FillBy(this.hogarAncianosDataSet3.Paciente);
+                this.pacienteTableAdapter.Fill(this.hogarAncianosDataSet3.Paciente1);
             }
             catch (System.Exception ex)
             {
@@ -252,7 +252,7 @@ namespace Registro_Terapeutico
         {
             try
             {
-                this.pacienteTableAdapter.Fill(this.hogarAncianosDataSet3.Paciente);
+                this.pacienteTableAdapter.Fill(this.hogarAncianosDataSet3.Paciente1);
             }
             catch (System.Exception ex)
             {
@@ -265,7 +265,7 @@ namespace Registro_Terapeutico
         {
             try
             {
-                this.pacienteTableAdapter.FillBy1(this.hogarAncianosDataSet3.Paciente);
+                this.pacienteTableAdapter.Fill(this.hogarAncianosDataSet3.Paciente1);
             }
             catch (System.Exception ex)
             {

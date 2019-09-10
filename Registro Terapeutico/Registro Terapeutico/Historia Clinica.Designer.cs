@@ -36,7 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.nuevo_btn = new System.Windows.Forms.Button();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.PacienteTableAdapter = new Registro_Terapeutico.PacientesRegistradosTableAdapters.PacienteTableAdapter();
+            this.PacienteTableAdapter = new Registro_Terapeutico.PacientesRegistradosTableAdapters.Paciente1TableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.PacienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PacientesRegistrados)).BeginInit();
             this.SuspendLayout();
@@ -135,6 +135,6 @@
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource PacienteBindingSource;
         private PacientesRegistrados PacientesRegistrados;
-        private PacientesRegistradosTableAdapters.PacienteTableAdapter PacienteTableAdapter;
+        private PacientesRegistradosTableAdapters.Paciente1TableAdapter PacienteTableAdapter;
     }
 }

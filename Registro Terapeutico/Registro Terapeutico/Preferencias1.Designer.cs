@@ -24,7 +24,7 @@ namespace Registro_Terapeutico {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class Preferencias : global::System.Data.DataSet {
         
-        private PreferenciaDataTable tablePreferencia;
+        private Preferencia1DataTable tablePreferencia1;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace Registro_Terapeutico {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Preferencia"] != null)) {
-                    base.Tables.Add(new PreferenciaDataTable(ds.Tables["Preferencia"]));
+                if ((ds.Tables["Preferencia1"] != null)) {
+                    base.Tables.Add(new Preferencia1DataTable(ds.Tables["Preferencia1"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Registro_Terapeutico {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public PreferenciaDataTable Preferencia {
+        public Preferencia1DataTable Preferencia1 {
             get {
-                return this.tablePreferencia;
+                return this.tablePreferencia1;
             }
         }
         
@@ -152,8 +152,8 @@ namespace Registro_Terapeutico {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Preferencia"] != null)) {
-                    base.Tables.Add(new PreferenciaDataTable(ds.Tables["Preferencia"]));
+                if ((ds.Tables["Preferencia1"] != null)) {
+                    base.Tables.Add(new Preferencia1DataTable(ds.Tables["Preferencia1"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Registro_Terapeutico {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablePreferencia = ((PreferenciaDataTable)(base.Tables["Preferencia"]));
+            this.tablePreferencia1 = ((Preferencia1DataTable)(base.Tables["Preferencia1"]));
             if ((initTable == true)) {
-                if ((this.tablePreferencia != null)) {
-                    this.tablePreferencia.InitVars();
+                if ((this.tablePreferencia1 != null)) {
+                    this.tablePreferencia1.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace Registro_Terapeutico {
             this.Namespace = "http://tempuri.org/Preferencias.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablePreferencia = new PreferenciaDataTable();
-            base.Tables.Add(this.tablePreferencia);
+            this.tablePreferencia1 = new Preferencia1DataTable();
+            base.Tables.Add(this.tablePreferencia1);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializePreferencia() {
+        private bool ShouldSerializePreferencia1() {
             return false;
         }
         
@@ -270,14 +270,14 @@ namespace Registro_Terapeutico {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void PreferenciaRowChangeEventHandler(object sender, PreferenciaRowChangeEvent e);
+        public delegate void Preferencia1RowChangeEventHandler(object sender, Preferencia1RowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class PreferenciaDataTable : global::System.Data.TypedTableBase<PreferenciaRow> {
+        public partial class Preferencia1DataTable : global::System.Data.TypedTableBase<Preferencia1Row> {
             
             private global::System.Data.DataColumn columncodigo_pre;
             
@@ -287,8 +287,8 @@ namespace Registro_Terapeutico {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PreferenciaDataTable() {
-                this.TableName = "Preferencia";
+            public Preferencia1DataTable() {
+                this.TableName = "Preferencia1";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -296,7 +296,7 @@ namespace Registro_Terapeutico {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal PreferenciaDataTable(global::System.Data.DataTable table) {
+            internal Preferencia1DataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -313,7 +313,7 @@ namespace Registro_Terapeutico {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected PreferenciaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Preferencia1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -353,54 +353,54 @@ namespace Registro_Terapeutico {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PreferenciaRow this[int index] {
+            public Preferencia1Row this[int index] {
                 get {
-                    return ((PreferenciaRow)(this.Rows[index]));
+                    return ((Preferencia1Row)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event PreferenciaRowChangeEventHandler PreferenciaRowChanging;
+            public event Preferencia1RowChangeEventHandler Preferencia1RowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event PreferenciaRowChangeEventHandler PreferenciaRowChanged;
+            public event Preferencia1RowChangeEventHandler Preferencia1RowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event PreferenciaRowChangeEventHandler PreferenciaRowDeleting;
+            public event Preferencia1RowChangeEventHandler Preferencia1RowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event PreferenciaRowChangeEventHandler PreferenciaRowDeleted;
+            public event Preferencia1RowChangeEventHandler Preferencia1RowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddPreferenciaRow(PreferenciaRow row) {
+            public void AddPreferencia1Row(Preferencia1Row row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PreferenciaRow AddPreferenciaRow(string nombre_pre, string rutaVideo_pre) {
-                PreferenciaRow rowPreferenciaRow = ((PreferenciaRow)(this.NewRow()));
+            public Preferencia1Row AddPreferencia1Row(string nombre_pre, string rutaVideo_pre) {
+                Preferencia1Row rowPreferencia1Row = ((Preferencia1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         nombre_pre,
                         rutaVideo_pre};
-                rowPreferenciaRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowPreferenciaRow);
-                return rowPreferenciaRow;
+                rowPreferencia1Row.ItemArray = columnValuesArray;
+                this.Rows.Add(rowPreferencia1Row);
+                return rowPreferencia1Row;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PreferenciaRow FindBycodigo_pre(int codigo_pre) {
-                return ((PreferenciaRow)(this.Rows.Find(new object[] {
+            public Preferencia1Row FindBycodigo_pre(int codigo_pre) {
+                return ((Preferencia1Row)(this.Rows.Find(new object[] {
                             codigo_pre})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                PreferenciaDataTable cln = ((PreferenciaDataTable)(base.Clone()));
+                Preferencia1DataTable cln = ((Preferencia1DataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -408,7 +408,7 @@ namespace Registro_Terapeutico {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new PreferenciaDataTable();
+                return new Preferencia1DataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -436,34 +436,34 @@ namespace Registro_Terapeutico {
                 this.columncodigo_pre.AllowDBNull = false;
                 this.columncodigo_pre.ReadOnly = true;
                 this.columncodigo_pre.Unique = true;
-                this.columnnombre_pre.MaxLength = 10;
-                this.columnrutaVideo_pre.MaxLength = 200;
+                this.columnnombre_pre.MaxLength = 50;
+                this.columnrutaVideo_pre.MaxLength = 500;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PreferenciaRow NewPreferenciaRow() {
-                return ((PreferenciaRow)(this.NewRow()));
+            public Preferencia1Row NewPreferencia1Row() {
+                return ((Preferencia1Row)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new PreferenciaRow(builder);
+                return new Preferencia1Row(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(PreferenciaRow);
+                return typeof(Preferencia1Row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.PreferenciaRowChanged != null)) {
-                    this.PreferenciaRowChanged(this, new PreferenciaRowChangeEvent(((PreferenciaRow)(e.Row)), e.Action));
+                if ((this.Preferencia1RowChanged != null)) {
+                    this.Preferencia1RowChanged(this, new Preferencia1RowChangeEvent(((Preferencia1Row)(e.Row)), e.Action));
                 }
             }
             
@@ -471,8 +471,8 @@ namespace Registro_Terapeutico {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.PreferenciaRowChanging != null)) {
-                    this.PreferenciaRowChanging(this, new PreferenciaRowChangeEvent(((PreferenciaRow)(e.Row)), e.Action));
+                if ((this.Preferencia1RowChanging != null)) {
+                    this.Preferencia1RowChanging(this, new Preferencia1RowChangeEvent(((Preferencia1Row)(e.Row)), e.Action));
                 }
             }
             
@@ -480,8 +480,8 @@ namespace Registro_Terapeutico {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.PreferenciaRowDeleted != null)) {
-                    this.PreferenciaRowDeleted(this, new PreferenciaRowChangeEvent(((PreferenciaRow)(e.Row)), e.Action));
+                if ((this.Preferencia1RowDeleted != null)) {
+                    this.Preferencia1RowDeleted(this, new Preferencia1RowChangeEvent(((Preferencia1Row)(e.Row)), e.Action));
                 }
             }
             
@@ -489,14 +489,14 @@ namespace Registro_Terapeutico {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.PreferenciaRowDeleting != null)) {
-                    this.PreferenciaRowDeleting(this, new PreferenciaRowChangeEvent(((PreferenciaRow)(e.Row)), e.Action));
+                if ((this.Preferencia1RowDeleting != null)) {
+                    this.Preferencia1RowDeleting(this, new Preferencia1RowChangeEvent(((Preferencia1Row)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemovePreferenciaRow(PreferenciaRow row) {
+            public void RemovePreferencia1Row(Preferencia1Row row) {
                 this.Rows.Remove(row);
             }
             
@@ -523,7 +523,7 @@ namespace Registro_Terapeutico {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "PreferenciaDataTable";
+                attribute2.FixedValue = "Preferencia1DataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -567,25 +567,25 @@ namespace Registro_Terapeutico {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class PreferenciaRow : global::System.Data.DataRow {
+        public partial class Preferencia1Row : global::System.Data.DataRow {
             
-            private PreferenciaDataTable tablePreferencia;
+            private Preferencia1DataTable tablePreferencia1;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal PreferenciaRow(global::System.Data.DataRowBuilder rb) : 
+            internal Preferencia1Row(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablePreferencia = ((PreferenciaDataTable)(this.Table));
+                this.tablePreferencia1 = ((Preferencia1DataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int codigo_pre {
                 get {
-                    return ((int)(this[this.tablePreferencia.codigo_preColumn]));
+                    return ((int)(this[this.tablePreferencia1.codigo_preColumn]));
                 }
                 set {
-                    this[this.tablePreferencia.codigo_preColumn] = value;
+                    this[this.tablePreferencia1.codigo_preColumn] = value;
                 }
             }
             
@@ -594,14 +594,14 @@ namespace Registro_Terapeutico {
             public string nombre_pre {
                 get {
                     try {
-                        return ((string)(this[this.tablePreferencia.nombre_preColumn]));
+                        return ((string)(this[this.tablePreferencia1.nombre_preColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nombre_pre\' de la tabla \'Preferencia\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nombre_pre\' de la tabla \'Preferencia1\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePreferencia.nombre_preColumn] = value;
+                    this[this.tablePreferencia1.nombre_preColumn] = value;
                 }
             }
             
@@ -610,39 +610,39 @@ namespace Registro_Terapeutico {
             public string rutaVideo_pre {
                 get {
                     try {
-                        return ((string)(this[this.tablePreferencia.rutaVideo_preColumn]));
+                        return ((string)(this[this.tablePreferencia1.rutaVideo_preColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'rutaVideo_pre\' de la tabla \'Preferencia\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'rutaVideo_pre\' de la tabla \'Preferencia1\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePreferencia.rutaVideo_preColumn] = value;
+                    this[this.tablePreferencia1.rutaVideo_preColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool Isnombre_preNull() {
-                return this.IsNull(this.tablePreferencia.nombre_preColumn);
+                return this.IsNull(this.tablePreferencia1.nombre_preColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void Setnombre_preNull() {
-                this[this.tablePreferencia.nombre_preColumn] = global::System.Convert.DBNull;
+                this[this.tablePreferencia1.nombre_preColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsrutaVideo_preNull() {
-                return this.IsNull(this.tablePreferencia.rutaVideo_preColumn);
+                return this.IsNull(this.tablePreferencia1.rutaVideo_preColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetrutaVideo_preNull() {
-                this[this.tablePreferencia.rutaVideo_preColumn] = global::System.Convert.DBNull;
+                this[this.tablePreferencia1.rutaVideo_preColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -650,22 +650,22 @@ namespace Registro_Terapeutico {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class PreferenciaRowChangeEvent : global::System.EventArgs {
+        public class Preferencia1RowChangeEvent : global::System.EventArgs {
             
-            private PreferenciaRow eventRow;
+            private Preferencia1Row eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PreferenciaRowChangeEvent(PreferenciaRow row, global::System.Data.DataRowAction action) {
+            public Preferencia1RowChangeEvent(Preferencia1Row row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PreferenciaRow Row {
+            public Preferencia1Row Row {
                 get {
                     return this.eventRow;
                 }
@@ -693,7 +693,7 @@ namespace Registro_Terapeutico.PreferenciasTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class PreferenciaTableAdapter : global::System.ComponentModel.Component {
+    public partial class Preferencia1TableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -707,7 +707,7 @@ namespace Registro_Terapeutico.PreferenciasTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public PreferenciaTableAdapter() {
+        public Preferencia1TableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -804,7 +804,7 @@ namespace Registro_Terapeutico.PreferenciasTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Preferencia";
+            tableMapping.DataSetTable = "Preferencia1";
             tableMapping.ColumnMappings.Add("codigo_pre", "codigo_pre");
             tableMapping.ColumnMappings.Add("nombre_pre", "nombre_pre");
             tableMapping.ColumnMappings.Add("rutaVideo_pre", "rutaVideo_pre");
@@ -864,7 +864,7 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int preferenciasPaciente(Preferencias.PreferenciaDataTable dataTable, global::System.Nullable<int> valor) {
+        public virtual int preferenciasPaciente(Preferencias.Preferencia1DataTable dataTable, global::System.Nullable<int> valor) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((valor.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(valor.Value));
@@ -883,7 +883,7 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Preferencias.PreferenciaDataTable GetData(global::System.Nullable<int> valor) {
+        public virtual Preferencias.Preferencia1DataTable GetData(global::System.Nullable<int> valor) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((valor.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(valor.Value));
@@ -891,7 +891,7 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            Preferencias.PreferenciaDataTable dataTable = new Preferencias.PreferenciaDataTable();
+            Preferencias.Preferencia1DataTable dataTable = new Preferencias.Preferencia1DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -899,7 +899,7 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Preferencias.PreferenciaDataTable dataTable) {
+        public virtual int Update(Preferencias.Preferencia1DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -907,7 +907,7 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(Preferencias dataSet) {
-            return this.Adapter.Update(dataSet, "Preferencia");
+            return this.Adapter.Update(dataSet, "Preferencia1");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1068,7 +1068,7 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
         
         private UpdateOrderOption _updateOrder;
         
-        private PreferenciaTableAdapter _preferenciaTableAdapter;
+        private Preferencia1TableAdapter _preferencia1TableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1090,12 +1090,12 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public PreferenciaTableAdapter PreferenciaTableAdapter {
+        public Preferencia1TableAdapter Preferencia1TableAdapter {
             get {
-                return this._preferenciaTableAdapter;
+                return this._preferencia1TableAdapter;
             }
             set {
-                this._preferenciaTableAdapter = value;
+                this._preferencia1TableAdapter = value;
             }
         }
         
@@ -1118,9 +1118,9 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._preferenciaTableAdapter != null) 
-                            && (this._preferenciaTableAdapter.Connection != null))) {
-                    return this._preferenciaTableAdapter.Connection;
+                if (((this._preferencia1TableAdapter != null) 
+                            && (this._preferencia1TableAdapter.Connection != null))) {
+                    return this._preferencia1TableAdapter.Connection;
                 }
                 return null;
             }
@@ -1135,7 +1135,7 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._preferenciaTableAdapter != null)) {
+                if ((this._preferencia1TableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1149,12 +1149,12 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateUpdatedRows(Preferencias dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._preferenciaTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Preferencia.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._preferencia1TableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Preferencia1.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._preferenciaTableAdapter.Update(updatedRows));
+                    result = (result + this._preferencia1TableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1168,11 +1168,11 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateInsertedRows(Preferencias dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._preferenciaTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Preferencia.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._preferencia1TableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Preferencia1.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._preferenciaTableAdapter.Update(addedRows));
+                    result = (result + this._preferencia1TableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1186,11 +1186,11 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateDeletedRows(Preferencias dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._preferenciaTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Preferencia.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._preferencia1TableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Preferencia1.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._preferenciaTableAdapter.Update(deletedRows));
+                    result = (result + this._preferencia1TableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1233,8 +1233,8 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._preferenciaTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._preferenciaTableAdapter.Connection) == false))) {
+            if (((this._preferencia1TableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._preferencia1TableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi" +
                         "sma cadena de conexión.");
             }
@@ -1270,13 +1270,13 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._preferenciaTableAdapter != null)) {
-                    revertConnections.Add(this._preferenciaTableAdapter, this._preferenciaTableAdapter.Connection);
-                    this._preferenciaTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._preferenciaTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._preferenciaTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._preferenciaTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._preferenciaTableAdapter.Adapter);
+                if ((this._preferencia1TableAdapter != null)) {
+                    revertConnections.Add(this._preferencia1TableAdapter, this._preferencia1TableAdapter.Connection);
+                    this._preferencia1TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._preferencia1TableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._preferencia1TableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._preferencia1TableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._preferencia1TableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1337,9 +1337,9 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._preferenciaTableAdapter != null)) {
-                    this._preferenciaTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._preferenciaTableAdapter]));
-                    this._preferenciaTableAdapter.Transaction = null;
+                if ((this._preferencia1TableAdapter != null)) {
+                    this._preferencia1TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._preferencia1TableAdapter]));
+                    this._preferencia1TableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

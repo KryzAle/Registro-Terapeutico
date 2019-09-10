@@ -35,7 +35,7 @@
             this.TratamientoPorPaciente = new Registro_Terapeutico.TratamientoPorPaciente();
             this.Registro_TerapeuticoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Registro_TerapeuticoTableAdapter = new Registro_Terapeutico.TratamientoPorPacienteTableAdapters.Registro_TerapeuticoTableAdapter();
-            this.PacienteTableAdapter = new Registro_Terapeutico.PacientesGlobalesTableAdapters.PacienteTableAdapter();
+            this.PacienteTableAdapter = new Registro_Terapeutico.PacientesGlobalesTableAdapters.Paciente1TableAdapter();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.PacienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PacientesGlobales)).BeginInit();
@@ -108,7 +108,7 @@
         private TratamientoPorPacienteTableAdapters.Registro_TerapeuticoTableAdapter Registro_TerapeuticoTableAdapter;
         private System.Windows.Forms.BindingSource PacienteBindingSource;
         private PacientesGlobales PacientesGlobales;
-        private PacientesGlobalesTableAdapters.PacienteTableAdapter PacienteTableAdapter;
+        private PacientesGlobalesTableAdapters.Paciente1TableAdapter PacienteTableAdapter;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

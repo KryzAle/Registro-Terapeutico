@@ -106,7 +106,6 @@ D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Reporte_Diagnostico_Paciente.resources
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Reporte_Preferencias.resources
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.seleccionarPreferencia.resources
-D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Terapias_por_Fecha.resources
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Video.resources
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csproj.GenerateResource.cache
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csproj.CoreCompileInputs.cache
@@ -232,3 +231,8 @@ E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\De
 E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.ReportePacientesGlobales.resources
 E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csprojAssemblyReference.cache
 E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.ReporteTratamientosGrobales.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.ReporteMensual.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.ReportePacientesGlobales.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.ReporteTratamientosGrobales.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\HogarAncianos.mdf
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\HogarAncianos_log.ldf
