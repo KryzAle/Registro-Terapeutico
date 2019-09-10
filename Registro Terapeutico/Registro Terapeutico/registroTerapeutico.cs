@@ -40,20 +40,58 @@ namespace Registro_Terapeutico
 
         private void Registro_btn_Click(object sender, EventArgs e)
         {
-            string cadena = "insert into Registro_Terapeutico(fecha_reg,repeticiones_reg,observaciones_reg,codigo_pac,codigo_usu,codigo_ter) values('" + fecha_txt.Value + "'," +numero_repeticion_txt.Text + ", '" + Observaciones_txt.Text + "'," + paciente_cmb.SelectedValue.ToString() + "," + FormLogin.usuarioId + "," + terapia_cmb.SelectedValue.ToString() +")";
-           
-            SqlCommand sql = new SqlCommand(cadena, conn);
-            sql.ExecuteNonQuery();
-            MessageBox.Show("Registro Guardado Correctamente");
-            conn.Close();
-            this.Close();
-            registroTerapeutico registroTerapeutico = new registroTerapeutico();
-            registroTerapeutico.Show();
+            validaryGuardar();
             
+            
+        }
+        private bool validaryGuardar()
+        {
+            if (paciente_cmb.SelectedIndex != 0)
+            {
+                if (tipo_cmb.SelectedIndex != 0)
+                {
+                    if (terapia_cmb.SelectedIndex != 0)
+                    {
+                        if (!numero_repeticion_txt.Text.Equals(""))
+                        {
+                            string cadena = "insert into Registro_Terapeutico(fecha_reg,repeticiones_reg,diagnostico_reg,observaciones_reg,codigo_pac,codigo_usu,codigo_ter) values('" + fecha_txt.Value + "'," + numero_repeticion_txt.Text + ", '" + Diagnostico_txt.Text + "','" + Observaciones_txt.Text + "'," + paciente_cmb.SelectedValue.ToString() + "," + FormLogin.usuarioId + "," + terapia_cmb.SelectedValue.ToString() + ")";
+                            
+                            SqlCommand sql = new SqlCommand(cadena, conn);
+                            sql.ExecuteNonQuery();
+                            MessageBox.Show("Registro Guardado Correctamente");
+                            conn.Close();
+                            this.Close();
+                            registroTerapeutico registroTerapeutico = new registroTerapeutico();
+                            registroTerapeutico.Show();
+                            return true;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ingrese repeticiones");
+                        }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Seleccione un tratamiento");
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un tratamiento");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un Paciente");
+            }
+            return false;
+
         }
         private void CargarDatosPaciente()
         {
-            string cadena = "Select codigo_pac,apellido_pac+nombre_pac as NombreCompleto from Paciente";
+            string cadena = "Select codigo_pac,apellido_pac+SPACE(1)+ nombre_pac as NombreCompleto from Paciente";
             SqlCommand sql = new SqlCommand(cadena, conn);
             SqlDataAdapter adapter = new SqlDataAdapter(sql);
             DataTable dt = new DataTable();
@@ -118,33 +156,64 @@ namespace Registro_Terapeutico
 
         private void Empezar_btn_Click(object sender, EventArgs e)
         {
-            string cadena = "Select nombre_pre,rutaVideo_pre from Preferencia Where codigo_pac=" + paciente_cmb.SelectedValue.ToString();
-            SqlCommand sql = new SqlCommand(cadena, conn);
-            SqlDataAdapter adapter = new SqlDataAdapter(sql);
-            DataTable dt = new DataTable();
-            adapter.Fill(dt);
-            if (dt.Rows.Count != 0)
+            if (validaryGuardar())
             {
-                seleccionarPreferencia seleccionar = new seleccionarPreferencia(dt);
-                seleccionar.Show();
-            }
-            else
-            {
-                cadena = "Select nombre_pre,rutaVideo_pre from Preferencia";
-                sql = new SqlCommand(cadena, conn);
-                adapter = new SqlDataAdapter(sql);
-                dt = new DataTable();
+                //Se carga Preferencias del paciente
+                string cadena = "Select nombre_pre,rutaVideo_pre from Preferencia Where codigo_pac=" + paciente_cmb.SelectedValue.ToString();
+                SqlCommand sql = new SqlCommand(cadena, conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(sql);
+                DataTable dt = new DataTable();
                 adapter.Fill(dt);
-                Random random = new Random();
-                int rnd = random.Next(dt.Rows.Count);
-                DataRow dr = dt.Rows[rnd];
-                string ruta = dr["rutaVideo_pre"].ToString();
-                Video video = new Video(ruta);
-                
-                video.Show();
+                //si existe preferencias manda a seleccionar o manda un video randomico
+                if (dt.Rows.Count != 0)
+                {
+                    seleccionarPreferencia seleccionar = new seleccionarPreferencia(dt);
+                    seleccionar.Show();
+                }
+                else
+                {
+                    cadena = "Select nombre_pre,rutaVideo_pre from Preferencia";
+                    sql = new SqlCommand(cadena, conn);
+                    adapter = new SqlDataAdapter(sql);
+                    dt = new DataTable();
+                    adapter.Fill(dt);
+                    Random random = new Random();
+                    int rnd = random.Next(dt.Rows.Count);
+                    DataRow dr = dt.Rows[rnd];
+                    string ruta = dr["rutaVideo_pre"].ToString();
+                    Video video = new Video(ruta);
+
+                    video.Show();
+                }
+
+
             }
 
-            
+
+        }
+
+        private void Terapia_cmb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (terapia_cmb.SelectedIndex!=0)
+            {
+                string cadena = "Select sensor from Terapia where codigo_ter="+terapia_cmb.SelectedValue.ToString();
+                SqlCommand sql = new SqlCommand(cadena, conn);
+                SqlDataReader reader = sql.ExecuteReader();
+                if (reader.Read())
+                {
+                    MessageBox.Show(reader["sensor"].ToString());
+                    if (reader["sensor"].ToString().Equals("1"))
+                    {
+                        empezar_btn.Enabled = true;
+                    }
+                    else
+                    {
+                        empezar_btn.Enabled = false;
+                    }
+                }
+                reader.Close();
+
+            }
         }
     }
 }

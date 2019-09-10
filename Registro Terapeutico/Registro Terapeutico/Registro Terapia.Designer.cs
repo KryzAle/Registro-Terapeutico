@@ -32,19 +32,21 @@
             this.nombre_txt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tipo_cmb = new System.Windows.Forms.ComboBox();
+            this.tipoTerapiaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hogarAncianosDataSet = new Registro_Terapeutico.HogarAncianosDataSet();
             this.label4 = new System.Windows.Forms.Label();
             this.cancelar_btn = new System.Windows.Forms.Button();
             this.registro_btn = new System.Windows.Forms.Button();
-            this.hogarAncianosDataSet = new Registro_Terapeutico.HogarAncianosDataSet();
-            this.tipoTerapiaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tipo_TerapiaTableAdapter = new Registro_Terapeutico.HogarAncianosDataSetTableAdapters.Tipo_TerapiaTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.hogarAncianosDataSet)).BeginInit();
+            this.sensor_txt = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tipoTerapiaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hogarAncianosDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // nombre_txt
             // 
-            this.nombre_txt.Location = new System.Drawing.Point(162, 63);
+            this.nombre_txt.Location = new System.Drawing.Point(162, 38);
             this.nombre_txt.Name = "nombre_txt";
             this.nombre_txt.Size = new System.Drawing.Size(195, 20);
             this.nombre_txt.TabIndex = 6;
@@ -53,7 +55,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(86, 63);
+            this.label2.Location = new System.Drawing.Point(86, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 15);
             this.label2.TabIndex = 5;
@@ -64,17 +66,27 @@
             this.tipo_cmb.DataSource = this.tipoTerapiaBindingSource;
             this.tipo_cmb.DisplayMember = "nombre_tip";
             this.tipo_cmb.FormattingEnabled = true;
-            this.tipo_cmb.Location = new System.Drawing.Point(162, 96);
+            this.tipo_cmb.Location = new System.Drawing.Point(162, 71);
             this.tipo_cmb.Name = "tipo_cmb";
             this.tipo_cmb.Size = new System.Drawing.Size(195, 21);
             this.tipo_cmb.TabIndex = 10;
             this.tipo_cmb.ValueMember = "codigo_tip";
             // 
+            // tipoTerapiaBindingSource
+            // 
+            this.tipoTerapiaBindingSource.DataMember = "Tipo_Terapia";
+            this.tipoTerapiaBindingSource.DataSource = this.hogarAncianosDataSet;
+            // 
+            // hogarAncianosDataSet
+            // 
+            this.hogarAncianosDataSet.DataSetName = "HogarAncianosDataSet";
+            this.hogarAncianosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(86, 97);
+            this.label4.Location = new System.Drawing.Point(86, 72);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 15);
             this.label4.TabIndex = 9;
@@ -118,25 +130,39 @@
             this.registro_btn.UseVisualStyleBackColor = true;
             this.registro_btn.Click += new System.EventHandler(this.Registro_btn_Click);
             // 
-            // hogarAncianosDataSet
-            // 
-            this.hogarAncianosDataSet.DataSetName = "HogarAncianosDataSet";
-            this.hogarAncianosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tipoTerapiaBindingSource
-            // 
-            this.tipoTerapiaBindingSource.DataMember = "Tipo_Terapia";
-            this.tipoTerapiaBindingSource.DataSource = this.hogarAncianosDataSet;
-            // 
             // tipo_TerapiaTableAdapter
             // 
             this.tipo_TerapiaTableAdapter.ClearBeforeFill = true;
+            // 
+            // sensor_txt
+            // 
+            this.sensor_txt.FormattingEnabled = true;
+            this.sensor_txt.Items.AddRange(new object[] {
+            "Si",
+            "No"});
+            this.sensor_txt.Location = new System.Drawing.Point(162, 99);
+            this.sensor_txt.Name = "sensor_txt";
+            this.sensor_txt.Size = new System.Drawing.Size(87, 21);
+            this.sensor_txt.TabIndex = 22;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(86, 105);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 15);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Sensor";
             // 
             // Registro_Terapia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(604, 199);
+            this.Controls.Add(this.sensor_txt);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.cancelar_btn);
             this.Controls.Add(this.registro_btn);
             this.Controls.Add(this.tipo_cmb);
@@ -147,8 +173,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro_Terapia";
             this.Load += new System.EventHandler(this.Registro_Terapia_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.hogarAncianosDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipoTerapiaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hogarAncianosDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,5 +191,7 @@
         private HogarAncianosDataSet hogarAncianosDataSet;
         private System.Windows.Forms.BindingSource tipoTerapiaBindingSource;
         private HogarAncianosDataSetTableAdapters.Tipo_TerapiaTableAdapter tipo_TerapiaTableAdapter;
+        private System.Windows.Forms.ComboBox sensor_txt;
+        private System.Windows.Forms.Label label5;
     }
 }

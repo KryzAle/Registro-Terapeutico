@@ -12,9 +12,15 @@ namespace Registro_Terapeutico
 {
     public partial class menu : Form
     {
+        FormLogin padre2 = new FormLogin();
         public menu()
         {
             InitializeComponent();
+        }
+        public menu(FormLogin padre)
+        {
+            InitializeComponent();
+            padre2 = padre;
         }
 
         private void Menu_Load(object sender, EventArgs e)
@@ -56,6 +62,19 @@ namespace Registro_Terapeutico
         {
             preferencias preferencias = new preferencias();
             preferencias.Show();
+        }
+
+        private void Menu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Desea Salir ", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
+            {
+                padre2.Close();
+            }
+            else if (res == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

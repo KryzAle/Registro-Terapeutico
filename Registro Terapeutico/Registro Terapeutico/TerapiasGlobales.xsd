@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TerapiasGlobales" targetNamespace="http://tempuri.org/TerapiasGlobales.xsd" xmlns:mstns="http://tempuri.org/TerapiasGlobales.xsd" xmlns="http://tempuri.org/TerapiasGlobales.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Conexion" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Conexion (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Registro_Terapeutico.Properties.Settings.GlobalReference.Default.Conexion" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TerapiaTableAdapter" GeneratorDataComponentClassName="TerapiaTableAdapter" Name="Terapia" UserDataComponentName="TerapiaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Conexion (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="terapiasGlobales" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="terapiasGlobales" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="terapiasGlobales">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select Terapia.nombre_ter,Tipo_Terapia.nombre_tip 
+from Terapia
+INNER JOIN Tipo_Terapia ON Terapia.codigo_tip = Tipo_Terapia.codigo_tip</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nombre_ter" DataSetColumn="nombre_ter" />
+              <Mapping SourceColumn="nombre_tip" DataSetColumn="nombre_tip" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TerapiasGlobales" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="TerapiasGlobales" msprop:Generator_UserDSName="TerapiasGlobales">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Terapia" msprop:Generator_TableClassName="TerapiaDataTable" msprop:Generator_TableVarName="tableTerapia" msprop:Generator_TablePropName="Terapia" msprop:Generator_RowDeletingName="TerapiaRowDeleting" msprop:Generator_RowChangingName="TerapiaRowChanging" msprop:Generator_RowEvHandlerName="TerapiaRowChangeEventHandler" msprop:Generator_RowDeletedName="TerapiaRowDeleted" msprop:Generator_UserTableName="Terapia" msprop:Generator_RowChangedName="TerapiaRowChanged" msprop:Generator_RowEvArgName="TerapiaRowChangeEvent" msprop:Generator_RowClassName="TerapiaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre_ter" msprop:Generator_ColumnVarNameInTable="columnnombre_ter" msprop:Generator_ColumnPropNameInRow="nombre_ter" msprop:Generator_ColumnPropNameInTable="nombre_terColumn" msprop:Generator_UserColumnName="nombre_ter" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nombre_tip" msprop:Generator_ColumnVarNameInTable="columnnombre_tip" msprop:Generator_ColumnPropNameInRow="nombre_tip" msprop:Generator_ColumnPropNameInTable="nombre_tipColumn" msprop:Generator_UserColumnName="nombre_tip" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

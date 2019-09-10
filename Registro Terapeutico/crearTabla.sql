@@ -12,7 +12,7 @@ create table Paciente(
 codigo_pac int IDENTITY(1,1) primary key,
 nombre_pac varchar(50),
 apellido_pac varchar(50),
-cedula_pac varchar(50),
+cedula_pac varchar(20),
 fecha_nacimiento_pac date,
 fecha_registro_pac date,
 antecedentes_pac char(200),
@@ -26,8 +26,8 @@ impresion_diagnostica_pac varchar(200)
 );
 create table Preferencia (
 codigo_pre int IDENTITY(1,1) primary key,
-nombre_pre varchar(10),
-rutaVideo_pre varchar(200),
+nombre_pre varchar(50),
+rutaVideo_pre varchar(500),
 codigo_pac int FOREIGN KEY REFERENCES Paciente(codigo_pac)
 );
 
@@ -46,6 +46,7 @@ create table Registro_Terapeutico(
 codigo_reg int IDENTITY(1,1) primary key,
 fecha_reg date,
 repeticiones_reg int,
+diagnostico_reg varchar(100),
 observaciones_reg varchar(100),
 codigo_pac int FOREIGN KEY REFERENCES Paciente(codigo_pac),
 codigo_usu int FOREIGN KEY REFERENCES Usuario(codigo_usu),

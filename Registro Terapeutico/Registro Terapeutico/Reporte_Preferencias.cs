@@ -29,7 +29,7 @@ namespace Registro_Terapeutico
         }
         private void CargarDatosPaciente()
         {
-            string cadena = "Select codigo_pac,apellido_pac+nombre_pac as NombreCompleto from Paciente";
+            string cadena = "Select codigo_pac,apellido_pac+SPACE(1)+ nombre_pac as NombreCompleto from Paciente";
             SqlCommand sql = new SqlCommand(cadena, conn);
             SqlDataAdapter adapter = new SqlDataAdapter(sql);
             DataTable dt = new DataTable();
@@ -44,9 +44,18 @@ namespace Registro_Terapeutico
 
         private void Nuevo_btn_Click(object sender, EventArgs e)
         {
-            this.PreferenciaTableAdapter.preferenciasPaciente(this.Preferencias.Preferencia, Int32.Parse(paciente_cmb.SelectedValue.ToString()));
+            if (paciente_cmb.SelectedIndex != 0)
+            {
+                this.PreferenciaTableAdapter.preferenciasPaciente(this.Preferencias.Preferencia, Int32.Parse(paciente_cmb.SelectedValue.ToString()));
 
             this.reportViewer1.RefreshReport();
+
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un Paciente");
+            }
+            
         }
     }
 }

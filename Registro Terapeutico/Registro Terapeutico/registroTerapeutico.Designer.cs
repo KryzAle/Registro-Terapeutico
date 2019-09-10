@@ -145,6 +145,7 @@
             this.terapia_cmb.Name = "terapia_cmb";
             this.terapia_cmb.Size = new System.Drawing.Size(205, 21);
             this.terapia_cmb.TabIndex = 9;
+            this.terapia_cmb.SelectedIndexChanged += new System.EventHandler(this.Terapia_cmb_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -249,6 +250,7 @@
             // 
             // empezar_btn
             // 
+            this.empezar_btn.Enabled = false;
             this.empezar_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.empezar_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.empezar_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -270,6 +272,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(820, 434);
             this.Controls.Add(this.cancelar_btn);
             this.Controls.Add(this.registro_btn);

@@ -19,8 +19,8 @@ namespace Registro_Terapeutico
 
         private void Terapia_realizada_btn_Click(object sender, EventArgs e)
         {
-            Terapias_por_Fecha terapias_Por_Fecha = new Terapias_por_Fecha();
-            terapias_Por_Fecha.Show();
+            ReporteMensual reporteMensual = new ReporteMensual();
+            reporteMensual.Show();
         }
 
         private void Terapia_paciente_btn_Click(object sender, EventArgs e)
@@ -40,6 +40,18 @@ namespace Registro_Terapeutico
             Reporte_Preferencias reporte_Preferencias = new Reporte_Preferencias();
             reporte_Preferencias.Show();
 
+        }
+
+        private void Paciente_btn_Click(object sender, EventArgs e)
+        {
+            ReportePacientesGlobales reportePacientes = new ReportePacientesGlobales();
+            reportePacientes.Show();
+        }
+
+        private void Terapias_btn_Click(object sender, EventArgs e)
+        {
+            ReporteTratamientosGrobales reporteTratamientos = new ReporteTratamientosGrobales();
+            reporteTratamientos.Show();
         }
     }
 }

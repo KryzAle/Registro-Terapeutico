@@ -24,10 +24,18 @@ namespace Registro_Terapeutico
 
         private void Nuevo_btn_Click(object sender, EventArgs e)
         {
+            if (paciente_cmb.SelectedIndex!=0)
+            {
             // TODO: esta línea de código carga datos en la tabla 'PacientesRegistrados.Paciente' Puede moverla o quitarla según sea necesario.
-            this.PacienteTableAdapter.HistoriaClinicaPorPaciente(this.PacientesRegistrados.Paciente, Int32.Parse(paciente_cmb.SelectedValue.ToString()));
+                        this.PacienteTableAdapter.HistoriaClinicaPorPaciente(this.PacientesRegistrados.Paciente, Int32.Parse(paciente_cmb.SelectedValue.ToString()));
 
-            this.reportViewer1.RefreshReport();
+                        this.reportViewer1.RefreshReport();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un Paciente");
+            }
+            
         }
 
         private void Label3_Click(object sender, EventArgs e)
@@ -47,7 +55,7 @@ namespace Registro_Terapeutico
         }
         private void CargarDatosPaciente()
         {
-            string cadena = "Select codigo_pac,apellido_pac+nombre_pac as NombreCompleto from Paciente";
+            string cadena = "Select codigo_pac,apellido_pac+SPACE(1)+ nombre_pac as NombreCompleto from Paciente";
             SqlCommand sql = new SqlCommand(cadena, conn);
             SqlDataAdapter adapter = new SqlDataAdapter(sql);
             DataTable dt = new DataTable();

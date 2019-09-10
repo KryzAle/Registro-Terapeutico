@@ -28,6 +28,7 @@ namespace Registro_Terapeutico
             {
                 axWindowsMediaPlayer1.fullScreen = true;
             }
+            axWindowsMediaPlayer1.Ctlcontrols.fastForward();
         }
 
         private void Video_Load(object sender, EventArgs e)

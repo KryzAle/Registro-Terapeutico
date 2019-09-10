@@ -65,10 +65,9 @@
         <Source>Embedded</Source>
         <Value>Encabezado</Value>
         <Sizing>FitProportional</Sizing>
-        <Top>0.20477cm</Top>
         <Left>2.07426cm</Left>
-        <Height>5.04343cm</Height>
-        <Width>17.95865cm</Width>
+        <Height>4.1703cm</Height>
+        <Width>15.76261cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -147,7 +146,9 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>cedula_pac</rd:DefaultName>
@@ -207,7 +208,9 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>fecha_nacimiento_pac</rd:DefaultName>
@@ -237,7 +240,9 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>fecha_registro_pac</rd:DefaultName>
@@ -297,7 +302,9 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>antecedentes_pac</rd:DefaultName>
@@ -357,12 +364,14 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>dolor_pac</rd:DefaultName>
-        <Top>11.71787cm</Top>
-        <Left>7.42103cm</Left>
+        <Top>11.45329cm</Top>
+        <Left>7.42104cm</Left>
         <Height>0.6cm</Height>
         <Width>7.30483cm</Width>
         <ZIndex>12</ZIndex>
@@ -391,8 +400,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox29</rd:DefaultName>
-        <Top>11.71787cm</Top>
-        <Left>2.07426cm</Left>
+        <Top>11.45329cm</Top>
+        <Left>2.07427cm</Left>
         <Height>0.6cm</Height>
         <Width>4.77761cm</Width>
         <ZIndex>13</ZIndex>
@@ -417,12 +426,14 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>marcha_pac</rd:DefaultName>
-        <Top>12.98787cm</Top>
-        <Left>7.42103cm</Left>
+        <Top>12.72329cm</Top>
+        <Left>7.42104cm</Left>
         <Height>0.6cm</Height>
         <Width>7.30483cm</Width>
         <ZIndex>14</ZIndex>
@@ -451,8 +462,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox29</rd:DefaultName>
-        <Top>12.98787cm</Top>
-        <Left>2.07426cm</Left>
+        <Top>12.72329cm</Top>
+        <Left>2.07427cm</Left>
         <Height>0.6cm</Height>
         <Width>4.77761cm</Width>
         <ZIndex>15</ZIndex>
@@ -477,12 +488,14 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>muscular_pac</rd:DefaultName>
-        <Top>14.21553cm</Top>
-        <Left>7.42103cm</Left>
+        <Top>13.95095cm</Top>
+        <Left>7.42104cm</Left>
         <Height>0.6cm</Height>
         <Width>7.30483cm</Width>
         <ZIndex>16</ZIndex>
@@ -511,8 +524,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox29</rd:DefaultName>
-        <Top>14.21553cm</Top>
-        <Left>2.07426cm</Left>
+        <Top>13.95095cm</Top>
+        <Left>2.07427cm</Left>
         <Height>0.6cm</Height>
         <Width>4.77761cm</Width>
         <ZIndex>17</ZIndex>
@@ -537,12 +550,14 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>neurologica_pac</rd:DefaultName>
-        <Top>15.35853cm</Top>
-        <Left>7.42103cm</Left>
+        <Top>15.09395cm</Top>
+        <Left>7.42104cm</Left>
         <Height>0.6cm</Height>
         <Width>7.30483cm</Width>
         <ZIndex>18</ZIndex>
@@ -571,8 +586,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox29</rd:DefaultName>
-        <Top>15.35853cm</Top>
-        <Left>2.07426cm</Left>
+        <Top>15.09395cm</Top>
+        <Left>2.07427cm</Left>
         <Height>0.6cm</Height>
         <Width>4.77761cm</Width>
         <ZIndex>19</ZIndex>
@@ -597,12 +612,14 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>articular_pac</rd:DefaultName>
-        <Top>16.75553cm</Top>
-        <Left>7.42103cm</Left>
+        <Top>16.49095cm</Top>
+        <Left>7.42104cm</Left>
         <Height>0.6cm</Height>
         <Width>7.30483cm</Width>
         <ZIndex>20</ZIndex>
@@ -631,8 +648,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox29</rd:DefaultName>
-        <Top>16.75553cm</Top>
-        <Left>2.07426cm</Left>
+        <Top>16.49095cm</Top>
+        <Left>2.07427cm</Left>
         <Height>0.6cm</Height>
         <Width>4.77761cm</Width>
         <ZIndex>21</ZIndex>
@@ -657,12 +674,14 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>discapacidad_pac</rd:DefaultName>
-        <Top>18.21603cm</Top>
-        <Left>7.42103cm</Left>
+        <Top>17.95145cm</Top>
+        <Left>7.42104cm</Left>
         <Height>0.6cm</Height>
         <Width>7.30483cm</Width>
         <ZIndex>22</ZIndex>
@@ -691,8 +710,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox29</rd:DefaultName>
-        <Top>18.21603cm</Top>
-        <Left>2.07426cm</Left>
+        <Top>17.95145cm</Top>
+        <Left>2.07427cm</Left>
         <Height>0.6cm</Height>
         <Width>4.77761cm</Width>
         <ZIndex>23</ZIndex>
@@ -717,12 +736,14 @@
                 <Style />
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>impresion_diagnostica_pac</rd:DefaultName>
-        <Top>19.54953cm</Top>
-        <Left>7.42103cm</Left>
+        <Top>19.28495cm</Top>
+        <Left>7.42104cm</Left>
         <Height>0.6cm</Height>
         <Width>7.30483cm</Width>
         <ZIndex>24</ZIndex>
@@ -751,11 +772,44 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox29</rd:DefaultName>
-        <Top>19.54953cm</Top>
-        <Left>2.07426cm</Left>
+        <Top>19.28495cm</Top>
+        <Left>2.07427cm</Left>
         <Height>0.6cm</Height>
         <Width>4.77761cm</Width>
         <ZIndex>25</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Historia Clínica</Value>
+                <Style>
+                  <FontFamily>Bodoni MT Black</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>4.49727cm</Top>
+        <Left>7.42103cm</Left>
+        <Height>0.63629cm</Height>
+        <Width>3.74299cm</Width>
+        <ZIndex>26</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>

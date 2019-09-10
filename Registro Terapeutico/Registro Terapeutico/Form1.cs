@@ -52,8 +52,8 @@ namespace Registro_Terapeutico
             valida=Validar_Usuario(user_txt.Text,pass_txt.Text);
             if (valida)
             {
-                MessageBox.Show("Ingreso Correcto Logeando........");
-                menu menu = new menu();
+                MessageBox.Show("Ingreso Correcto");
+                menu menu = new menu(this);
                 menu.Show();
                 this.Hide();
                 
@@ -63,6 +63,12 @@ namespace Registro_Terapeutico
                 MessageBox.Show("Datos Incorrectos");
                 BorrarDatos();
             }
+        }
+        private void form_Closing()
+        {
+
+            this.Close();
+
         }
         private void BorrarDatos()
         {

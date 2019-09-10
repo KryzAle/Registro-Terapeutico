@@ -104,6 +104,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HogarAncianosDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HogarAncianosDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HogarAncianosDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HogarAncianosDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HogarAncianosDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +125,11 @@
     </Compile>
     <Compile Include="menuReportes.Designer.cs">
       <DependentUpon>menuReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PacientesGlobales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PacientesGlobales.xsd</DependentUpon>
     </Compile>
     <Compile Include="PacientesRegistrados.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -152,16 +167,42 @@
     <Compile Include="registroTerapeutico.Designer.cs">
       <DependentUpon>registroTerapeutico.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistroTerapias.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistroTerapias.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reporte Diagnostico Paciente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reporte Diagnostico Paciente.Designer.cs">
       <DependentUpon>Reporte Diagnostico Paciente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReporteMensual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteMensual.Designer.cs">
+      <DependentUpon>ReporteMensual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportePacientesGlobales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportePacientesGlobales.Designer.cs">
+      <DependentUpon>ReportePacientesGlobales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteTratamiento.cs">
+      <DependentUpon>ReporteTratamiento.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ReporteTratamiento.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ReporteTratamiento.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteTratamientosGrobales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteTratamientosGrobales.Designer.cs">
+      <DependentUpon>ReporteTratamientosGrobales.cs</DependentUpon>
     </Compile>
     <Compile Include="Reporte_Preferencias.cs">
       <SubType>Form</SubType>
@@ -176,11 +217,18 @@
       <DependentUpon>seleccionarPreferencia.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <Compile Include="Terapias por Fecha.cs">
-      <SubType>Form</SubType>
+    <Compile Include="TerapiasGlobales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TerapiasGlobales.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Terapias por Fecha.Designer.cs">
-      <DependentUpon>Terapias por Fecha.cs</DependentUpon>
+    <Compile Include="TratamientoPorPaciente.cs">
+      <DependentUpon>TratamientoPorPaciente.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TratamientoPorPaciente.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TratamientoPorPaciente.xsd</DependentUpon>
     </Compile>
     <Compile Include="Video.cs">
       <SubType>Form</SubType>
@@ -226,20 +274,29 @@
       <DependentUpon>registroTerapeutico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReporteHistoriaClinicaPaciente.rdlc" />
+    <EmbeddedResource Include="ReporteMensual.resx">
+      <DependentUpon>ReporteMensual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportePacientesGlobales.rdlc" />
+    <EmbeddedResource Include="ReportePacientesGlobales.resx">
+      <DependentUpon>ReportePacientesGlobales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportePorPaciente.rdlc" />
     <EmbeddedResource Include="ReportePreferencia.rdlc" />
     <EmbeddedResource Include="Reporte Diagnostico Paciente.resx">
       <DependentUpon>Reporte Diagnostico Paciente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReporteTerapiaPorFechas.rdlc" />
+    <EmbeddedResource Include="reporteTerapiasGlobales.rdlc" />
+    <EmbeddedResource Include="ReporteTratamientosGrobales.resx">
+      <DependentUpon>ReporteTratamientosGrobales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reporte_Preferencias.resx">
       <DependentUpon>Reporte_Preferencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="seleccionarPreferencia.resx">
       <DependentUpon>seleccionarPreferencia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Terapias por Fecha.resx">
-      <DependentUpon>Terapias por Fecha.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="terapiasPorFecha.rdlc" />
     <EmbeddedResource Include="Video.resx">
       <DependentUpon>Video.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,6 +333,39 @@
     <None Include="HogarAncianosDataSet2.xss">
       <DependentUpon>HogarAncianosDataSet2.xsd</DependentUpon>
     </None>
+    <None Include="HogarAncianosDataSet3.xsc">
+      <DependentUpon>HogarAncianosDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="HogarAncianosDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HogarAncianosDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HogarAncianosDataSet3.xss">
+      <DependentUpon>HogarAncianosDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="HogarAncianosDataSet4.xsc">
+      <DependentUpon>HogarAncianosDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="HogarAncianosDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HogarAncianosDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HogarAncianosDataSet4.xss">
+      <DependentUpon>HogarAncianosDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PacientesGlobales.xsc">
+      <DependentUpon>PacientesGlobales.xsd</DependentUpon>
+    </None>
+    <None Include="PacientesGlobales.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PacientesGlobales.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PacientesGlobales.xss">
+      <DependentUpon>PacientesGlobales.xsd</DependentUpon>
+    </None>
     <None Include="PacientesRegistrados.xsc">
       <DependentUpon>PacientesRegistrados.xsd</DependentUpon>
     </None>
@@ -308,6 +398,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="RegistroTerapias.xsc">
+      <DependentUpon>RegistroTerapias.xsd</DependentUpon>
+    </None>
+    <None Include="RegistroTerapias.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegistroTerapias.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RegistroTerapias.xss">
+      <DependentUpon>RegistroTerapias.xsd</DependentUpon>
+    </None>
     <None Include="ReporteTratamiento.xsc">
       <DependentUpon>ReporteTratamiento.xsd</DependentUpon>
     </None>
@@ -318,6 +419,28 @@
     </None>
     <None Include="ReporteTratamiento.xss">
       <DependentUpon>ReporteTratamiento.xsd</DependentUpon>
+    </None>
+    <None Include="TerapiasGlobales.xsc">
+      <DependentUpon>TerapiasGlobales.xsd</DependentUpon>
+    </None>
+    <None Include="TerapiasGlobales.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TerapiasGlobales.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TerapiasGlobales.xss">
+      <DependentUpon>TerapiasGlobales.xsd</DependentUpon>
+    </None>
+    <None Include="TratamientoPorPaciente.xsc">
+      <DependentUpon>TratamientoPorPaciente.xsd</DependentUpon>
+    </None>
+    <None Include="TratamientoPorPaciente.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TratamientoPorPaciente.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TratamientoPorPaciente.xss">
+      <DependentUpon>TratamientoPorPaciente.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

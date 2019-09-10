@@ -190,7 +190,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>Preferencias</DataSetName>
-        <Top>5.9055cm</Top>
+        <Top>6.858cm</Top>
         <Left>4.23333cm</Left>
         <Height>1.2cm</Height>
         <Width>11.45584cm</Width>
@@ -207,7 +207,7 @@
         <Sizing>FitProportional</Sizing>
         <Top>1.13074cm</Top>
         <Left>0.68326cm</Left>
-        <Height>5.97476cm</Height>
+        <Height>4.59837cm</Height>
         <Width>17.95865cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
@@ -216,6 +216,39 @@
           </Border>
         </Style>
       </Image>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Preferencias por Paciente</Value>
+                <Style>
+                  <FontFamily>Bodoni MT Black</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>5.72911cm</Top>
+        <Left>6.70629cm</Left>
+        <Height>0.63629cm</Height>
+        <Width>5.91258cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
     <Height>3.54167in</Height>
     <Style />

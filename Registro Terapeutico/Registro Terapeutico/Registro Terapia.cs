@@ -36,13 +36,21 @@ namespace Registro_Terapeutico
 
         private void Registro_btn_Click(object sender, EventArgs e)
         {
-            string cadena = "insert into Terapia(nombre_ter, codigo_tip) values('" + nombre_txt.Text + "',"+tipo_cmb.SelectedValue +")";
-            SqlCommand sql = new SqlCommand(cadena, conn);
-            sql.ExecuteNonQuery();
-            MessageBox.Show("Registro Guardado Correctamente");
-            this.Close();
-            Registro_Terapia registro_Terapia = new Registro_Terapia();
-            registro_Terapia.Show();
+            if (tipo_cmb.SelectedIndex!=0)
+            {
+                string cadena = "insert into Terapia(nombre_ter, codigo_tip,sensor) values('" + nombre_txt.Text + "'," + tipo_cmb.SelectedValue + ","+sensor_txt.SelectedIndex.ToString()+")";
+                SqlCommand sql = new SqlCommand(cadena, conn);
+                sql.ExecuteNonQuery();
+                MessageBox.Show("Registro Guardado Correctamente");
+                this.Close();
+                Registro_Terapia registro_Terapia = new Registro_Terapia();
+                registro_Terapia.Show();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione Tipo de Terapia");
+            }
+            
         }
     }
 }

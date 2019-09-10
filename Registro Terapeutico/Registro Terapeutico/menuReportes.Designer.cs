@@ -88,6 +88,7 @@
             this.terapias_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.terapias_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.terapias_btn.UseVisualStyleBackColor = true;
+            this.terapias_btn.Click += new System.EventHandler(this.Terapias_btn_Click);
             // 
             // paciente_btn
             // 
@@ -108,6 +109,7 @@
             this.paciente_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.paciente_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.paciente_btn.UseVisualStyleBackColor = true;
+            this.paciente_btn.Click += new System.EventHandler(this.Paciente_btn_Click);
             // 
             // historia_clinica_btn
             // 
@@ -175,6 +177,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(716, 516);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.preferencia_paciente_btn);

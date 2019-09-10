@@ -6,21 +6,27 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>4.48966cm</Width>
+              <Width>2.99311cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.48966cm</Width>
+              <Width>2.99311cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.48966cm</Width>
+              <Width>2.99311cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.48966cm</Width>
+              <Width>2.99311cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.99311cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.99311cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.58941cm</Height>
+              <Height>0.6cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -31,7 +37,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Fecha de Registro</Value>
+                              <Value>Responsable</Value>
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -72,7 +78,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Paciente</Value>
+                              <Value>Fecha</Value>
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -113,7 +119,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Antecedentes</Value>
+                              <Value>Diagnóstico</Value>
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -154,7 +160,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Terapia</Value>
+                              <Value>Tipo de Trat.</Value>
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -186,11 +192,128 @@
                     </Textbox>
                   </CellContents>
                 </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox9">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Tratamiento</Value>
+                              <Style>
+                                <FontSize>11pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>#666666</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox9</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BottomBorder>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </BottomBorder>
+                        <BackgroundColor>White</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox11">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Observación</Value>
+                              <Style>
+                                <FontSize>11pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>#666666</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox11</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BottomBorder>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </BottomBorder>
+                        <BackgroundColor>White</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.58941cm</Height>
+              <Height>0.6cm</Height>
               <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="nombre_usu">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!nombre_usu.Value</Value>
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>nombre_usu</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundColor>White</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="fecha_reg">
@@ -228,14 +351,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="nombre_pac">
+                    <Textbox Name="diagnostico_reg">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!nombre_pac.Value</Value>
+                              <Value>=Fields!diagnostico_reg.Value</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
@@ -247,42 +370,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>nombre_pac</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Style>None</Style>
-                        </Border>
-                        <BackgroundColor>White</BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="antecedentes_pac">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!antecedentes_pac.Value</Value>
-                              <Style>
-                                <FontWeight>Normal</FontWeight>
-                                <Color>#333333</Color>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>antecedentes_pac</rd:DefaultName>
+                      <rd:DefaultName>diagnostico_reg</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -331,12 +419,84 @@
                     </Textbox>
                   </CellContents>
                 </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="nombre_ter">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!nombre_ter.Value</Value>
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>nombre_ter</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundColor>White</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="observaciones_reg">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!observaciones_reg.Value</Value>
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>observaciones_reg</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundColor>White</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
               </TablixCells>
             </TablixRow>
           </TablixRows>
         </TablixBody>
         <TablixColumnHierarchy>
           <TablixMembers>
+            <TablixMember />
+            <TablixMember />
             <TablixMember />
             <TablixMember />
             <TablixMember />
@@ -353,26 +513,23 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <KeepTogether>true</KeepTogether>
         <DataSetName>DataSet1</DataSetName>
-        <Top>5.65346cm</Top>
-        <Left>2.32833cm</Left>
-        <Height>1.17883cm</Height>
+        <Top>6.10305cm</Top>
+        <Left>0.29104cm</Left>
+        <Height>1.2cm</Height>
         <Width>17.95865cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
-          <TextAlign>Center</TextAlign>
         </Style>
       </Tablix>
       <Image Name="Encabezado">
         <Source>Embedded</Source>
         <Value>Encabezado</Value>
         <Sizing>FitProportional</Sizing>
-        <Top>0.26811cm</Top>
-        <Left>2.32833cm</Left>
-        <Height>5.97476cm</Height>
+        <Left>0.29104cm</Left>
+        <Height>5.04343cm</Height>
         <Width>17.95865cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
@@ -381,11 +538,44 @@
           </Border>
         </Style>
       </Image>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Terapias por Paciente en Rango de Fechas</Value>
+                <Style>
+                  <FontFamily>Bodoni MT Black</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>5.29037cm</Top>
+        <Left>4.57557cm</Left>
+        <Height>0.63629cm</Height>
+        <Width>10.68101cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>3.64244in</Height>
+    <Height>5.46169in</Height>
     <Style />
   </Body>
-  <Width>8.44167in</Width>
+  <Width>7.862in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
@@ -398,18 +588,18 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="ReporteTratamiento">
+    <DataSource Name="TratamientoPorPaciente">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>da80b0b6-93d4-49c6-86e4-f3788c2ff5e0</rd:DataSourceID>
+      <rd:DataSourceID>0d46b412-8112-4d02-b652-7dd7d67a28a1</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>ReporteTratamiento</DataSourceName>
+        <DataSourceName>TratamientoPorPaciente</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -417,24 +607,32 @@
           <DataField>fecha_reg</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="nombre_pac">
-          <DataField>nombre_pac</DataField>
+        <Field Name="diagnostico_reg">
+          <DataField>diagnostico_reg</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="antecedentes_pac">
-          <DataField>antecedentes_pac</DataField>
+        <Field Name="observaciones_reg">
+          <DataField>observaciones_reg</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="nombre_usu">
+          <DataField>nombre_usu</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="nombre_tip">
           <DataField>nombre_tip</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="nombre_ter">
+          <DataField>nombre_ter</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>ReporteTratamiento</rd:DataSetName>
-        <rd:SchemaPath>D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\ReporteTratamiento.xsd</rd:SchemaPath>
+        <rd:DataSetName>TratamientoPorPaciente</rd:DataSetName>
+        <rd:SchemaPath>E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\TratamientoPorPaciente.xsd</rd:SchemaPath>
         <rd:TableName>Registro_Terapeutico</rd:TableName>
-        <rd:TableAdapterFillMethod>terapiaPorFechas</rd:TableAdapterFillMethod>
+        <rd:TableAdapterFillMethod>terapiasPorPaciente</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
         <rd:TableAdapterName>Registro_TerapeuticoTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
@@ -503,5 +701,5 @@ AZ//AAjOm/8AQNsf/AdKP+EZ03/oG2P/AIDpWhRQBn/8Izpv/QNsf/AdKP8AhGdN/wCgbY/+A6VoUUAZ
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>15de0304-6ad4-46e8-883c-0180c01b9e9c</rd:ReportID>
+  <rd:ReportID>178d5760-25c7-4c31-ada2-b76ed9f6a43d</rd:ReportID>
 </Report>

@@ -37,6 +37,8 @@
             this.buscar_btn = new System.Windows.Forms.Button();
             this.guardar_btn = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.eliminar_btn = new System.Windows.Forms.Button();
+            this.cancelar_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,6 +49,7 @@
             this.paciente_cmb.Name = "paciente_cmb";
             this.paciente_cmb.Size = new System.Drawing.Size(437, 21);
             this.paciente_cmb.TabIndex = 5;
+            this.paciente_cmb.SelectedIndexChanged += new System.EventHandler(this.Paciente_cmb_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -60,10 +63,13 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 214);
+            this.dataGridView1.Location = new System.Drawing.Point(133, 231);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(726, 207);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(343, 207);
             this.dataGridView1.TabIndex = 6;
             // 
             // label1
@@ -97,19 +103,23 @@
             // 
             this.buscar_btn.Location = new System.Drawing.Point(133, 116);
             this.buscar_btn.Name = "buscar_btn";
-            this.buscar_btn.Size = new System.Drawing.Size(198, 23);
+            this.buscar_btn.Size = new System.Drawing.Size(145, 23);
             this.buscar_btn.TabIndex = 10;
-            this.buscar_btn.Text = "Seleccionar";
+            this.buscar_btn.Text = "Seleccionar ....";
             this.buscar_btn.UseVisualStyleBackColor = true;
             this.buscar_btn.Click += new System.EventHandler(this.Buscar_btn_Click);
             // 
             // guardar_btn
             // 
-            this.guardar_btn.Location = new System.Drawing.Point(92, 171);
+            this.guardar_btn.Image = global::Registro_Terapeutico.Properties.Resources.guardar__1_;
+            this.guardar_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.guardar_btn.Location = new System.Drawing.Point(84, 200);
             this.guardar_btn.Name = "guardar_btn";
             this.guardar_btn.Size = new System.Drawing.Size(75, 23);
             this.guardar_btn.TabIndex = 11;
-            this.guardar_btn.Text = "guardar";
+            this.guardar_btn.Text = "Guardar";
+            this.guardar_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.guardar_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.guardar_btn.UseVisualStyleBackColor = true;
             this.guardar_btn.Click += new System.EventHandler(this.Guardar_btn_Click);
             // 
@@ -117,11 +127,42 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // eliminar_btn
+            // 
+            this.eliminar_btn.Image = global::Registro_Terapeutico.Properties.Resources.guardar__1_;
+            this.eliminar_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.eliminar_btn.Location = new System.Drawing.Point(263, 200);
+            this.eliminar_btn.Name = "eliminar_btn";
+            this.eliminar_btn.Size = new System.Drawing.Size(75, 23);
+            this.eliminar_btn.TabIndex = 12;
+            this.eliminar_btn.Text = "Eliminar";
+            this.eliminar_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.eliminar_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.eliminar_btn.UseVisualStyleBackColor = true;
+            this.eliminar_btn.Click += new System.EventHandler(this.Eliminar_btn_Click);
+            // 
+            // cancelar_btn
+            // 
+            this.cancelar_btn.Image = global::Registro_Terapeutico.Properties.Resources.flecha_hacia_atras;
+            this.cancelar_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cancelar_btn.Location = new System.Drawing.Point(495, 200);
+            this.cancelar_btn.Name = "cancelar_btn";
+            this.cancelar_btn.Size = new System.Drawing.Size(75, 23);
+            this.cancelar_btn.TabIndex = 13;
+            this.cancelar_btn.Text = "Cancelar";
+            this.cancelar_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cancelar_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.cancelar_btn.UseVisualStyleBackColor = true;
+            this.cancelar_btn.Click += new System.EventHandler(this.Cancelar_btn_Click);
+            // 
             // preferencias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(603, 450);
+            this.Controls.Add(this.cancelar_btn);
+            this.Controls.Add(this.eliminar_btn);
             this.Controls.Add(this.guardar_btn);
             this.Controls.Add(this.buscar_btn);
             this.Controls.Add(this.nombre_txt);
@@ -151,5 +192,7 @@
         private System.Windows.Forms.Button buscar_btn;
         private System.Windows.Forms.Button guardar_btn;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button eliminar_btn;
+        private System.Windows.Forms.Button cancelar_btn;
     }
 }
