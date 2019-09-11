@@ -52,5 +52,12 @@ namespace Registro_Terapeutico
             }
             
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            AgregarTipo tipoter = new AgregarTipo();
+            this.Close();
+            tipoter.Show();
+        }
     }
 }

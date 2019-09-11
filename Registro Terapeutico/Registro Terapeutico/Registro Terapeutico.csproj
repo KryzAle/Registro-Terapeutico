@@ -86,6 +86,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarTipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarTipo.Designer.cs">
+      <DependentUpon>AgregarTipo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,6 +246,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TerapiasGlobales.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TipoTerapias.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoTerapias.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TratamientoPorPaciente.cs">
       <DependentUpon>TratamientoPorPaciente.xsd</DependentUpon>
     </Compile>
@@ -254,6 +265,9 @@
     <Compile Include="Video.Designer.cs">
       <DependentUpon>Video.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AgregarTipo.resx">
+      <DependentUpon>AgregarTipo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -448,6 +462,17 @@
     </None>
     <None Include="TerapiasGlobales.xss">
       <DependentUpon>TerapiasGlobales.xsd</DependentUpon>
+    </None>
+    <None Include="TipoTerapias.xsc">
+      <DependentUpon>TipoTerapias.xsd</DependentUpon>
+    </None>
+    <None Include="TipoTerapias.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipoTerapias.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TipoTerapias.xss">
+      <DependentUpon>TipoTerapias.xsd</DependentUpon>
     </None>
     <None Include="TratamientoPorPaciente.xsc">
       <DependentUpon>TratamientoPorPaciente.xsd</DependentUpon>

@@ -36,7 +36,7 @@
             this.paciente_cmb = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.PreferenciaTableAdapter = new Registro_Terapeutico.PreferenciasTableAdapters.Preferencia1TableAdapter();
+            this.PreferenciaTableAdapter = new Registro_Terapeutico.PreferenciasTableAdapters.PreferenciaTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.PreferenciaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Preferencias)).BeginInit();
             this.SuspendLayout();
@@ -133,6 +133,6 @@
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource PreferenciaBindingSource;
         private Preferencias Preferencias;
-        private PreferenciasTableAdapters.Preferencia1TableAdapter PreferenciaTableAdapter;
+        private PreferenciasTableAdapters.PreferenciaTableAdapter PreferenciaTableAdapter;
     }
 }

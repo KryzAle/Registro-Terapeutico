@@ -90,7 +90,7 @@
             this.impresiondiagnostica = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pacienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hogarAncianosDataSet3 = new Registro_Terapeutico.HogarAncianosDataSet3();
-            this.pacienteTableAdapter = new Registro_Terapeutico.HogarAncianosDataSet3TableAdapters.Paciente1TableAdapter();
+            this.pacienteTableAdapter = new Registro_Terapeutico.HogarAncianosDataSet3TableAdapters.PacienteTableAdapter();
             this.groupBox1.SuspendLayout();
             this.marcha_box.SuspendLayout();
             this.dolor_box.SuspendLayout();
@@ -804,7 +804,7 @@
         private System.Windows.Forms.BindingSource hogarAncianosDataSet1BindingSource;
         private HogarAncianosDataSet3 hogarAncianosDataSet3;
         private System.Windows.Forms.BindingSource pacienteBindingSource;
-        private HogarAncianosDataSet3TableAdapters.Paciente1TableAdapter pacienteTableAdapter;
+        private HogarAncianosDataSet3TableAdapters.PacienteTableAdapter pacienteTableAdapter;
         private System.Windows.Forms.Button modificar_btn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellido;

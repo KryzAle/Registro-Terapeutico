@@ -46,7 +46,7 @@ namespace Registro_Terapeutico
         {
             if (paciente_cmb.SelectedIndex != 0)
             {
-                this.PreferenciaTableAdapter.preferenciasPaciente(this.Preferencias.Preferencia1, Int32.Parse(paciente_cmb.SelectedValue.ToString()));
+                this.PreferenciaTableAdapter.preferenciasPaciente(this.Preferencias.Preferencia, Int32.Parse(paciente_cmb.SelectedValue.ToString()));
 
             this.reportViewer1.RefreshReport();
 

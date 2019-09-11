@@ -7,9 +7,11 @@
     }
 }
 
-namespace Registro_Terapeutico.PacientesGlobalesTableAdapters {
-    
-    
-    public partial class Paciente1TableAdapter {
+namespace Registro_Terapeutico.PacientesGlobalesTableAdapters
+{
+
+
+    public partial class PacienteTableAdapter
+    {
     }
 }

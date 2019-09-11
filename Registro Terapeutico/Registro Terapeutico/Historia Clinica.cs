@@ -27,7 +27,7 @@ namespace Registro_Terapeutico
             if (paciente_cmb.SelectedIndex!=0)
             {
             // TODO: esta línea de código carga datos en la tabla 'PacientesRegistrados.Paciente' Puede moverla o quitarla según sea necesario.
-                        this.PacienteTableAdapter.HistoriaClinicaPorPaciente(this.PacientesRegistrados.Paciente1, Int32.Parse(paciente_cmb.SelectedValue.ToString()));
+                        this.PacienteTableAdapter.HistoriaClinicaPorPaciente(this.PacientesRegistrados.Paciente, Int32.Parse(paciente_cmb.SelectedValue.ToString()));
 
                         this.reportViewer1.RefreshReport();
             }

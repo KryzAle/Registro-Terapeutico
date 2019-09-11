@@ -7,7 +7,7 @@
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Conexion" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Conexion (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Registro_Terapeutico.Properties.Settings.GlobalReference.Default.Conexion" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Preferencia1TableAdapter" GeneratorDataComponentClassName="Preferencia1TableAdapter" Name="Preferencia1" UserDataComponentName="Preferencia1TableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PreferenciaTableAdapter" GeneratorDataComponentClassName="PreferenciaTableAdapter" Name="Preferencia" UserDataComponentName="PreferenciaTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="Conexion (Settings)" DbObjectName="dbo.Preferencia" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="preferenciasPaciente" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="preferenciasPaciente" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="preferenciasPaciente">
                 <DeleteCommand>
@@ -73,7 +73,7 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
   <xs:element name="Preferencias" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Preferencias" msprop:Generator_UserDSName="Preferencias">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Preferencia1" msprop:Generator_TableClassName="Preferencia1DataTable" msprop:Generator_TableVarName="tablePreferencia1" msprop:Generator_TablePropName="Preferencia1" msprop:Generator_RowDeletingName="Preferencia1RowDeleting" msprop:Generator_RowChangingName="Preferencia1RowChanging" msprop:Generator_RowEvHandlerName="Preferencia1RowChangeEventHandler" msprop:Generator_RowDeletedName="Preferencia1RowDeleted" msprop:Generator_UserTableName="Preferencia1" msprop:Generator_RowChangedName="Preferencia1RowChanged" msprop:Generator_RowEvArgName="Preferencia1RowChangeEvent" msprop:Generator_RowClassName="Preferencia1Row">
+        <xs:element name="Preferencia" msprop:Generator_TableClassName="PreferenciaDataTable" msprop:Generator_TableVarName="tablePreferencia" msprop:Generator_RowChangedName="PreferenciaRowChanged" msprop:Generator_TablePropName="Preferencia" msprop:Generator_RowDeletingName="PreferenciaRowDeleting" msprop:Generator_RowChangingName="PreferenciaRowChanging" msprop:Generator_RowEvHandlerName="PreferenciaRowChangeEventHandler" msprop:Generator_RowDeletedName="PreferenciaRowDeleted" msprop:Generator_RowClassName="PreferenciaRow" msprop:Generator_UserTableName="Preferencia" msprop:Generator_RowEvArgName="PreferenciaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="codigo_pre" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncodigo_pre" msprop:Generator_ColumnPropNameInRow="codigo_pre" msprop:Generator_ColumnPropNameInTable="codigo_preColumn" msprop:Generator_UserColumnName="codigo_pre" type="xs:int" />
@@ -97,7 +97,7 @@ SELECT nombre_pre, rutaVideo_pre, codigo_pre FROM Preferencia WHERE (codigo_pre 
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:Preferencia1" />
+      <xs:selector xpath=".//mstns:Preferencia" />
       <xs:field xpath="mstns:codigo_pre" />
     </xs:unique>
   </xs:element>

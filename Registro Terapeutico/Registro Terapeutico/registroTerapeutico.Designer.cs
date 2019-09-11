@@ -45,10 +45,10 @@
             this.Observaciones_txt = new System.Windows.Forms.TextBox();
             this.hogarAncianosDataSet1 = new Registro_Terapeutico.HogarAncianosDataSet1();
             this.pacienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pacienteTableAdapter = new Registro_Terapeutico.HogarAncianosDataSet1TableAdapters.Paciente1TableAdapter();
+            this.pacienteTableAdapter = new Registro_Terapeutico.HogarAncianosDataSet1TableAdapters.PacienteTableAdapter();
             this.hogarAncianosDataSet2 = new Registro_Terapeutico.HogarAncianosDataSet2();
             this.pacienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.pacienteTableAdapter1 = new Registro_Terapeutico.HogarAncianosDataSet2TableAdapters.Paciente1TableAdapter();
+            this.pacienteTableAdapter1 = new Registro_Terapeutico.HogarAncianosDataSet2TableAdapters.PacienteTableAdapter();
             this.cancelar_btn = new System.Windows.Forms.Button();
             this.registro_btn = new System.Windows.Forms.Button();
             this.empezar_btn = new System.Windows.Forms.Button();
@@ -325,9 +325,9 @@
         private System.Windows.Forms.Button cancelar_btn;
         private HogarAncianosDataSet1 hogarAncianosDataSet1;
         private System.Windows.Forms.BindingSource pacienteBindingSource;
-        private HogarAncianosDataSet1TableAdapters.Paciente1TableAdapter pacienteTableAdapter;
+        private HogarAncianosDataSet1TableAdapters.PacienteTableAdapter pacienteTableAdapter;
         private HogarAncianosDataSet2 hogarAncianosDataSet2;
         private System.Windows.Forms.BindingSource pacienteBindingSource1;
-        private HogarAncianosDataSet2TableAdapters.Paciente1TableAdapter pacienteTableAdapter1;
+        private HogarAncianosDataSet2TableAdapters.PacienteTableAdapter pacienteTableAdapter1;
     }
 }

@@ -40,6 +40,7 @@
             this.tipo_TerapiaTableAdapter = new Registro_Terapeutico.HogarAncianosDataSetTableAdapters.Tipo_TerapiaTableAdapter();
             this.sensor_txt = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.BotonTipo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tipoTerapiaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hogarAncianosDataSet)).BeginInit();
             this.SuspendLayout();
@@ -155,12 +156,23 @@
             this.label5.TabIndex = 21;
             this.label5.Text = "Sensor";
             // 
+            // BotonTipo
+            // 
+            this.BotonTipo.Location = new System.Drawing.Point(432, 64);
+            this.BotonTipo.Name = "BotonTipo";
+            this.BotonTipo.Size = new System.Drawing.Size(95, 23);
+            this.BotonTipo.TabIndex = 23;
+            this.BotonTipo.Text = "Agregar Tipo";
+            this.BotonTipo.UseVisualStyleBackColor = true;
+            this.BotonTipo.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // Registro_Terapia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(604, 199);
+            this.Controls.Add(this.BotonTipo);
             this.Controls.Add(this.sensor_txt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cancelar_btn);
@@ -193,5 +205,6 @@
         private HogarAncianosDataSetTableAdapters.Tipo_TerapiaTableAdapter tipo_TerapiaTableAdapter;
         private System.Windows.Forms.ComboBox sensor_txt;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button BotonTipo;
     }
 }

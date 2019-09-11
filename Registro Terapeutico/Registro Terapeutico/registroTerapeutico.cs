@@ -27,9 +27,9 @@ namespace Registro_Terapeutico
         private void RegistroTerapeutico_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'hogarAncianosDataSet2.Paciente' Puede moverla o quitarla según sea necesario.
-            this.pacienteTableAdapter1.Fill(this.hogarAncianosDataSet2.Paciente1);
+            this.pacienteTableAdapter1.Fill(this.hogarAncianosDataSet2.Paciente);
             // TODO: esta línea de código carga datos en la tabla 'hogarAncianosDataSet1.Paciente' Puede moverla o quitarla según sea necesario.
-            this.pacienteTableAdapter.Fill(this.hogarAncianosDataSet1.Paciente1);
+            this.pacienteTableAdapter.Fill(this.hogarAncianosDataSet1.Paciente);
 
         }
 

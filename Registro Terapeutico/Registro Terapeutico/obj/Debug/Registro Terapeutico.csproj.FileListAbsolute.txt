@@ -236,3 +236,6 @@ D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.ReporteTratamientosGrobales.resources
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\HogarAncianos.mdf
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\HogarAncianos_log.ldf
+E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\HogarAncianos.mdf
+E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\HogarAncianos_log.ldf
+E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.AgregarTipo.resources

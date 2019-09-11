@@ -24,7 +24,7 @@ namespace Registro_Terapeutico {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class HogarAncianosDataSet2 : global::System.Data.DataSet {
         
-        private Paciente1DataTable tablePaciente1;
+        private PacienteDataTable tablePaciente;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace Registro_Terapeutico {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Paciente1"] != null)) {
-                    base.Tables.Add(new Paciente1DataTable(ds.Tables["Paciente1"]));
+                if ((ds.Tables["Paciente"] != null)) {
+                    base.Tables.Add(new PacienteDataTable(ds.Tables["Paciente"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Registro_Terapeutico {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Paciente1DataTable Paciente1 {
+        public PacienteDataTable Paciente {
             get {
-                return this.tablePaciente1;
+                return this.tablePaciente;
             }
         }
         
@@ -152,8 +152,8 @@ namespace Registro_Terapeutico {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Paciente1"] != null)) {
-                    base.Tables.Add(new Paciente1DataTable(ds.Tables["Paciente1"]));
+                if ((ds.Tables["Paciente"] != null)) {
+                    base.Tables.Add(new PacienteDataTable(ds.Tables["Paciente"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Registro_Terapeutico {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablePaciente1 = ((Paciente1DataTable)(base.Tables["Paciente1"]));
+            this.tablePaciente = ((PacienteDataTable)(base.Tables["Paciente"]));
             if ((initTable == true)) {
-                if ((this.tablePaciente1 != null)) {
-                    this.tablePaciente1.InitVars();
+                if ((this.tablePaciente != null)) {
+                    this.tablePaciente.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace Registro_Terapeutico {
             this.Namespace = "http://tempuri.org/HogarAncianosDataSet2.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablePaciente1 = new Paciente1DataTable();
-            base.Tables.Add(this.tablePaciente1);
+            this.tablePaciente = new PacienteDataTable();
+            base.Tables.Add(this.tablePaciente);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializePaciente1() {
+        private bool ShouldSerializePaciente() {
             return false;
         }
         
@@ -270,14 +270,14 @@ namespace Registro_Terapeutico {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void Paciente1RowChangeEventHandler(object sender, Paciente1RowChangeEvent e);
+        public delegate void PacienteRowChangeEventHandler(object sender, PacienteRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Paciente1DataTable : global::System.Data.TypedTableBase<Paciente1Row> {
+        public partial class PacienteDataTable : global::System.Data.TypedTableBase<PacienteRow> {
             
             private global::System.Data.DataColumn columncodigo_pac;
             
@@ -287,8 +287,8 @@ namespace Registro_Terapeutico {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Paciente1DataTable() {
-                this.TableName = "Paciente1";
+            public PacienteDataTable() {
+                this.TableName = "Paciente";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -296,7 +296,7 @@ namespace Registro_Terapeutico {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal Paciente1DataTable(global::System.Data.DataTable table) {
+            internal PacienteDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -313,7 +313,7 @@ namespace Registro_Terapeutico {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected Paciente1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected PacienteDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -353,54 +353,54 @@ namespace Registro_Terapeutico {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Paciente1Row this[int index] {
+            public PacienteRow this[int index] {
                 get {
-                    return ((Paciente1Row)(this.Rows[index]));
+                    return ((PacienteRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Paciente1RowChangeEventHandler Paciente1RowChanging;
+            public event PacienteRowChangeEventHandler PacienteRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Paciente1RowChangeEventHandler Paciente1RowChanged;
+            public event PacienteRowChangeEventHandler PacienteRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Paciente1RowChangeEventHandler Paciente1RowDeleting;
+            public event PacienteRowChangeEventHandler PacienteRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Paciente1RowChangeEventHandler Paciente1RowDeleted;
+            public event PacienteRowChangeEventHandler PacienteRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddPaciente1Row(Paciente1Row row) {
+            public void AddPacienteRow(PacienteRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Paciente1Row AddPaciente1Row(string nombre_pac, string apellido_pac) {
-                Paciente1Row rowPaciente1Row = ((Paciente1Row)(this.NewRow()));
+            public PacienteRow AddPacienteRow(string nombre_pac, string apellido_pac) {
+                PacienteRow rowPacienteRow = ((PacienteRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         nombre_pac,
                         apellido_pac};
-                rowPaciente1Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowPaciente1Row);
-                return rowPaciente1Row;
+                rowPacienteRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowPacienteRow);
+                return rowPacienteRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Paciente1Row FindBycodigo_pac(int codigo_pac) {
-                return ((Paciente1Row)(this.Rows.Find(new object[] {
+            public PacienteRow FindBycodigo_pac(int codigo_pac) {
+                return ((PacienteRow)(this.Rows.Find(new object[] {
                             codigo_pac})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Paciente1DataTable cln = ((Paciente1DataTable)(base.Clone()));
+                PacienteDataTable cln = ((PacienteDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -408,7 +408,7 @@ namespace Registro_Terapeutico {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Paciente1DataTable();
+                return new PacienteDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -442,28 +442,28 @@ namespace Registro_Terapeutico {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Paciente1Row NewPaciente1Row() {
-                return ((Paciente1Row)(this.NewRow()));
+            public PacienteRow NewPacienteRow() {
+                return ((PacienteRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Paciente1Row(builder);
+                return new PacienteRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Paciente1Row);
+                return typeof(PacienteRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Paciente1RowChanged != null)) {
-                    this.Paciente1RowChanged(this, new Paciente1RowChangeEvent(((Paciente1Row)(e.Row)), e.Action));
+                if ((this.PacienteRowChanged != null)) {
+                    this.PacienteRowChanged(this, new PacienteRowChangeEvent(((PacienteRow)(e.Row)), e.Action));
                 }
             }
             
@@ -471,8 +471,8 @@ namespace Registro_Terapeutico {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Paciente1RowChanging != null)) {
-                    this.Paciente1RowChanging(this, new Paciente1RowChangeEvent(((Paciente1Row)(e.Row)), e.Action));
+                if ((this.PacienteRowChanging != null)) {
+                    this.PacienteRowChanging(this, new PacienteRowChangeEvent(((PacienteRow)(e.Row)), e.Action));
                 }
             }
             
@@ -480,8 +480,8 @@ namespace Registro_Terapeutico {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Paciente1RowDeleted != null)) {
-                    this.Paciente1RowDeleted(this, new Paciente1RowChangeEvent(((Paciente1Row)(e.Row)), e.Action));
+                if ((this.PacienteRowDeleted != null)) {
+                    this.PacienteRowDeleted(this, new PacienteRowChangeEvent(((PacienteRow)(e.Row)), e.Action));
                 }
             }
             
@@ -489,14 +489,14 @@ namespace Registro_Terapeutico {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Paciente1RowDeleting != null)) {
-                    this.Paciente1RowDeleting(this, new Paciente1RowChangeEvent(((Paciente1Row)(e.Row)), e.Action));
+                if ((this.PacienteRowDeleting != null)) {
+                    this.PacienteRowDeleting(this, new PacienteRowChangeEvent(((PacienteRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemovePaciente1Row(Paciente1Row row) {
+            public void RemovePacienteRow(PacienteRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -523,7 +523,7 @@ namespace Registro_Terapeutico {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Paciente1DataTable";
+                attribute2.FixedValue = "PacienteDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -567,25 +567,25 @@ namespace Registro_Terapeutico {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Paciente1Row : global::System.Data.DataRow {
+        public partial class PacienteRow : global::System.Data.DataRow {
             
-            private Paciente1DataTable tablePaciente1;
+            private PacienteDataTable tablePaciente;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal Paciente1Row(global::System.Data.DataRowBuilder rb) : 
+            internal PacienteRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablePaciente1 = ((Paciente1DataTable)(this.Table));
+                this.tablePaciente = ((PacienteDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int codigo_pac {
                 get {
-                    return ((int)(this[this.tablePaciente1.codigo_pacColumn]));
+                    return ((int)(this[this.tablePaciente.codigo_pacColumn]));
                 }
                 set {
-                    this[this.tablePaciente1.codigo_pacColumn] = value;
+                    this[this.tablePaciente.codigo_pacColumn] = value;
                 }
             }
             
@@ -594,14 +594,14 @@ namespace Registro_Terapeutico {
             public string nombre_pac {
                 get {
                     try {
-                        return ((string)(this[this.tablePaciente1.nombre_pacColumn]));
+                        return ((string)(this[this.tablePaciente.nombre_pacColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nombre_pac\' de la tabla \'Paciente1\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nombre_pac\' de la tabla \'Paciente\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePaciente1.nombre_pacColumn] = value;
+                    this[this.tablePaciente.nombre_pacColumn] = value;
                 }
             }
             
@@ -610,39 +610,39 @@ namespace Registro_Terapeutico {
             public string apellido_pac {
                 get {
                     try {
-                        return ((string)(this[this.tablePaciente1.apellido_pacColumn]));
+                        return ((string)(this[this.tablePaciente.apellido_pacColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'apellido_pac\' de la tabla \'Paciente1\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'apellido_pac\' de la tabla \'Paciente\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePaciente1.apellido_pacColumn] = value;
+                    this[this.tablePaciente.apellido_pacColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool Isnombre_pacNull() {
-                return this.IsNull(this.tablePaciente1.nombre_pacColumn);
+                return this.IsNull(this.tablePaciente.nombre_pacColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void Setnombre_pacNull() {
-                this[this.tablePaciente1.nombre_pacColumn] = global::System.Convert.DBNull;
+                this[this.tablePaciente.nombre_pacColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool Isapellido_pacNull() {
-                return this.IsNull(this.tablePaciente1.apellido_pacColumn);
+                return this.IsNull(this.tablePaciente.apellido_pacColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void Setapellido_pacNull() {
-                this[this.tablePaciente1.apellido_pacColumn] = global::System.Convert.DBNull;
+                this[this.tablePaciente.apellido_pacColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -650,22 +650,22 @@ namespace Registro_Terapeutico {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class Paciente1RowChangeEvent : global::System.EventArgs {
+        public class PacienteRowChangeEvent : global::System.EventArgs {
             
-            private Paciente1Row eventRow;
+            private PacienteRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Paciente1RowChangeEvent(Paciente1Row row, global::System.Data.DataRowAction action) {
+            public PacienteRowChangeEvent(PacienteRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Paciente1Row Row {
+            public PacienteRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -693,7 +693,7 @@ namespace Registro_Terapeutico.HogarAncianosDataSet2TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Paciente1TableAdapter : global::System.ComponentModel.Component {
+    public partial class PacienteTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -707,7 +707,7 @@ namespace Registro_Terapeutico.HogarAncianosDataSet2TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public Paciente1TableAdapter() {
+        public PacienteTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -804,7 +804,7 @@ namespace Registro_Terapeutico.HogarAncianosDataSet2TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Paciente1";
+            tableMapping.DataSetTable = "Paciente";
             tableMapping.ColumnMappings.Add("codigo_pac", "codigo_pac");
             tableMapping.ColumnMappings.Add("nombre_pac", "nombre_pac");
             tableMapping.ColumnMappings.Add("apellido_pac", "apellido_pac");
@@ -862,7 +862,7 @@ SELECT codigo_pac, nombre_pac, apellido_pac FROM Paciente WHERE (codigo_pac = @c
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(HogarAncianosDataSet2.Paciente1DataTable dataTable) {
+        public virtual int Fill(HogarAncianosDataSet2.PacienteDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -875,9 +875,9 @@ SELECT codigo_pac, nombre_pac, apellido_pac FROM Paciente WHERE (codigo_pac = @c
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual HogarAncianosDataSet2.Paciente1DataTable GetData() {
+        public virtual HogarAncianosDataSet2.PacienteDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            HogarAncianosDataSet2.Paciente1DataTable dataTable = new HogarAncianosDataSet2.Paciente1DataTable();
+            HogarAncianosDataSet2.PacienteDataTable dataTable = new HogarAncianosDataSet2.PacienteDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -885,7 +885,7 @@ SELECT codigo_pac, nombre_pac, apellido_pac FROM Paciente WHERE (codigo_pac = @c
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(HogarAncianosDataSet2.Paciente1DataTable dataTable) {
+        public virtual int Update(HogarAncianosDataSet2.PacienteDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -893,7 +893,7 @@ SELECT codigo_pac, nombre_pac, apellido_pac FROM Paciente WHERE (codigo_pac = @c
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(HogarAncianosDataSet2 dataSet) {
-            return this.Adapter.Update(dataSet, "Paciente1");
+            return this.Adapter.Update(dataSet, "Paciente");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1054,7 +1054,7 @@ SELECT codigo_pac, nombre_pac, apellido_pac FROM Paciente WHERE (codigo_pac = @c
         
         private UpdateOrderOption _updateOrder;
         
-        private Paciente1TableAdapter _paciente1TableAdapter;
+        private PacienteTableAdapter _pacienteTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1076,12 +1076,12 @@ SELECT codigo_pac, nombre_pac, apellido_pac FROM Paciente WHERE (codigo_pac = @c
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public Paciente1TableAdapter Paciente1TableAdapter {
+        public PacienteTableAdapter PacienteTableAdapter {
             get {
-                return this._paciente1TableAdapter;
+                return this._pacienteTableAdapter;
             }
             set {
-                this._paciente1TableAdapter = value;
+                this._pacienteTableAdapter = value;
             }
         }
         
@@ -1104,9 +1104,9 @@ SELECT codigo_pac, nombre_pac, apellido_pac FROM Paciente WHERE (codigo_pac = @c
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._paciente1TableAdapter != null) 
-                            && (this._paciente1TableAdapter.Connection != null))) {
-                    return this._paciente1TableAdapter.Connection;
+                if (((this._pacienteTableAdapter != null) 
+                            && (this._pacienteTableAdapter.Connection != null))) {
+                    return this._pacienteTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1121,7 +1121,7 @@ SELECT codigo_pac, nombre_pac, apellido_pac FROM Paciente WHERE (codigo_pac = @c
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._paciente1TableAdapter != null)) {
+                if ((this._pacienteTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1135,12 +1135,12 @@ SELECT codigo_pac, nombre_pac, apellido_pac FROM Paciente WHERE (codigo_pac = @c
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateUpdatedRows(HogarAncianosDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._paciente1TableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Paciente1.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._pacienteTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Paciente.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._paciente1TableAdapter.Update(updatedRows));
+                    result = (result + this._pacienteTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1154,11 +1154,11 @@ SELECT codigo_pac, nombre_pac, apellido_pac FROM Paciente WHERE (codigo_pac = @c
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateInsertedRows(HogarAncianosDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._paciente1TableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Paciente1.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._pacienteTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Paciente.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._paciente1TableAdapter.Update(addedRows));
+                    result = (result + this._pacienteTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1172,11 +1172,11 @@ SELECT codigo_pac, nombre_pac, apellido_pac FROM Paciente WHERE (codigo_pac = @c
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateDeletedRows(HogarAncianosDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._paciente1TableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Paciente1.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._pacienteTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Paciente.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._paciente1TableAdapter.Update(deletedRows));
+                    result = (result + this._pacienteTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1219,8 +1219,8 @@ SELECT codigo_pac, nombre_pac, apellido_pac FROM Paciente WHERE (codigo_pac = @c
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._paciente1TableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._paciente1TableAdapter.Connection) == false))) {
+            if (((this._pacienteTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._pacienteTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi" +
                         "sma cadena de conexión.");
             }
@@ -1256,13 +1256,13 @@ SELECT codigo_pac, nombre_pac, apellido_pac FROM Paciente WHERE (codigo_pac = @c
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._paciente1TableAdapter != null)) {
-                    revertConnections.Add(this._paciente1TableAdapter, this._paciente1TableAdapter.Connection);
-                    this._paciente1TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._paciente1TableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._paciente1TableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._paciente1TableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._paciente1TableAdapter.Adapter);
+                if ((this._pacienteTableAdapter != null)) {
+                    revertConnections.Add(this._pacienteTableAdapter, this._pacienteTableAdapter.Connection);
+                    this._pacienteTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._pacienteTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._pacienteTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._pacienteTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._pacienteTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1323,9 +1323,9 @@ SELECT codigo_pac, nombre_pac, apellido_pac FROM Paciente WHERE (codigo_pac = @c
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._paciente1TableAdapter != null)) {
-                    this._paciente1TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._paciente1TableAdapter]));
-                    this._paciente1TableAdapter.Transaction = null;
+                if ((this._pacienteTableAdapter != null)) {
+                    this._pacienteTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._pacienteTableAdapter]));
+                    this._pacienteTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

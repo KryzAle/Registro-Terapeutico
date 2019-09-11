@@ -20,7 +20,7 @@ namespace Registro_Terapeutico
         private void ReportePacientesGlobales_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'PacientesGlobales.Paciente' Puede moverla o quitarla según sea necesario.
-            this.PacienteTableAdapter.pacientesGlobales(this.PacientesGlobales.Paciente1);
+            this.PacienteTableAdapter.pacientesGlobales(this.PacientesGlobales.Paciente);
             this.reportViewer1.RefreshReport();
         }
     }

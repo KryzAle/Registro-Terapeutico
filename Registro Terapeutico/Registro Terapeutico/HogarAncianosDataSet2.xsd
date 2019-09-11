@@ -7,7 +7,7 @@
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Conexion" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Conexion (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Registro_Terapeutico.Properties.Settings.GlobalReference.Default.Conexion" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Paciente1TableAdapter" GeneratorDataComponentClassName="Paciente1TableAdapter" Name="Paciente1" UserDataComponentName="Paciente1TableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PacienteTableAdapter" GeneratorDataComponentClassName="PacienteTableAdapter" Name="Paciente" UserDataComponentName="PacienteTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="Conexion (Settings)" DbObjectName="dbo.Paciente" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
@@ -71,7 +71,7 @@ SELECT codigo_pac, nombre_pac, apellido_pac FROM Paciente WHERE (codigo_pac = @c
   <xs:element name="HogarAncianosDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="HogarAncianosDataSet2" msprop:Generator_UserDSName="HogarAncianosDataSet2">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Paciente1" msprop:Generator_TableClassName="Paciente1DataTable" msprop:Generator_TableVarName="tablePaciente1" msprop:Generator_TablePropName="Paciente1" msprop:Generator_RowDeletingName="Paciente1RowDeleting" msprop:Generator_RowChangingName="Paciente1RowChanging" msprop:Generator_RowEvHandlerName="Paciente1RowChangeEventHandler" msprop:Generator_RowDeletedName="Paciente1RowDeleted" msprop:Generator_UserTableName="Paciente1" msprop:Generator_RowChangedName="Paciente1RowChanged" msprop:Generator_RowEvArgName="Paciente1RowChangeEvent" msprop:Generator_RowClassName="Paciente1Row">
+        <xs:element name="Paciente" msprop:Generator_TableClassName="PacienteDataTable" msprop:Generator_TableVarName="tablePaciente" msprop:Generator_RowChangedName="PacienteRowChanged" msprop:Generator_TablePropName="Paciente" msprop:Generator_RowDeletingName="PacienteRowDeleting" msprop:Generator_RowChangingName="PacienteRowChanging" msprop:Generator_RowEvHandlerName="PacienteRowChangeEventHandler" msprop:Generator_RowDeletedName="PacienteRowDeleted" msprop:Generator_RowClassName="PacienteRow" msprop:Generator_UserTableName="Paciente" msprop:Generator_RowEvArgName="PacienteRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="codigo_pac" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncodigo_pac" msprop:Generator_ColumnPropNameInRow="codigo_pac" msprop:Generator_ColumnPropNameInTable="codigo_pacColumn" msprop:Generator_UserColumnName="codigo_pac" type="xs:int" />
@@ -95,7 +95,7 @@ SELECT codigo_pac, nombre_pac, apellido_pac FROM Paciente WHERE (codigo_pac = @c
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:Paciente1" />
+      <xs:selector xpath=".//mstns:Paciente" />
       <xs:field xpath="mstns:codigo_pac" />
     </xs:unique>
   </xs:element>
