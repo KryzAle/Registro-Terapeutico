@@ -139,8 +139,8 @@
             // 
             this.sensor_txt.FormattingEnabled = true;
             this.sensor_txt.Items.AddRange(new object[] {
-            "Si",
-            "No"});
+            "No",
+            "Si"});
             this.sensor_txt.Location = new System.Drawing.Point(162, 99);
             this.sensor_txt.Name = "sensor_txt";
             this.sensor_txt.Size = new System.Drawing.Size(87, 21);

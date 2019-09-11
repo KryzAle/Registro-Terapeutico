@@ -79,14 +79,15 @@ namespace Registro_Terapeutico
             {
                 if (!editar)
                 {
-                    string cadena = "insert into Paciente(nombre_pac, apellido_pac, cedula_pac, fecha_nacimiento_pac, fecha_registro_pac, antecedentes_pac, dolor_pac, marcha_pac, muscular_pac, neurologica_pac, articular_pac, discapacidad_pac, impresion_diagnostica_pac) values('" + nombre_txt.Text + " " + "', '" + apellido_txt.Text + "', '" + cedula_txt.Text + "', '" + fecha_nacimiento.Value + "', '" + fecha_registro.Value + "', '" + antecedentes_txt.Text + "'," + getDolor() + ", '" + getMarcha() + "', '" + muscular_txt.SelectedItem + "', '" + neurologicas_txt.SelectedItem + "', '" + articular_txt.Text + "', '" + discapacidad_txt.Text + "', '" + impresion_diagnostica.Text + "')";
+                    string cadena = "insert into Paciente(nombre_pac, apellido_pac, cedula_pac, fecha_nacimiento_pac, fecha_registro_pac, antecedentes_pac, dolor_pac, marcha_pac, muscular_pac, neurologica_pac, articular_pac, discapacidad_pac, impresion_diagnostica_pac) values('" + nombre_txt.Text + " " + "', '" + apellido_txt.Text + "', '" + cedula_txt.Text + "', '" + fecha_nacimiento.Value.Date.ToString("yyyy-MM-dd") + "', '" + fecha_registro.Value.Date.ToString("yyyy-MM-dd") + "', '" + antecedentes_txt.Text + "'," + getDolor() + ", '" + getMarcha() + "', '" + muscular_txt.SelectedItem + "', '" + neurologicas_txt.SelectedItem + "', '" + articular_txt.Text + "', '" + discapacidad_txt.Text + "', '" + impresion_diagnostica.Text + "')";
+                    //MessageBox.Show("fecha" + fecha_nacimiento.Value.Date.ToString("yyyy-MM-dd"));
                     SqlCommand sql = new SqlCommand(cadena, conn);
                     sql.ExecuteNonQuery();
 
                 }
                 else
                 {
-                    string cadena = "update Paciente set nombre_pac = '" + nombre_txt.Text + "', apellido_pac ='" + apellido_txt.Text + "', cedula_pac ='" + cedula_txt.Text + "', fecha_nacimiento_pac ='" + fecha_nacimiento.Value + "', fecha_registro_pac ='" + fecha_registro.Value + "', antecedentes_pac ='" + antecedentes_txt.Text + "', dolor_pac ='" + getDolor() + "', marcha_pac ='" + getMarcha() + "', muscular_pac ='" + muscular_txt.SelectedItem + "', neurologica_pac ='" + neurologicas_txt.SelectedItem + "', articular_pac ='" + articular_txt.Text + "', discapacidad_pac ='" + discapacidad_txt.Text + "', impresion_diagnostica_pac ='" + impresion_diagnostica.Text + "' Where codigo_pac = " + idPaciente;
+                    string cadena = "update Paciente set nombre_pac = '" + nombre_txt.Text + "', apellido_pac ='" + apellido_txt.Text + "', cedula_pac ='" + cedula_txt.Text + "', fecha_nacimiento_pac ='" + fecha_nacimiento.Value.Date.ToString("yyyy-MM-dd") + "', fecha_registro_pac ='" + fecha_registro.Value.Date.ToString("yyyy-MM-dd") + "', antecedentes_pac ='" + antecedentes_txt.Text + "', dolor_pac ='" + getDolor() + "', marcha_pac ='" + getMarcha() + "', muscular_pac ='" + muscular_txt.SelectedItem + "', neurologica_pac ='" + neurologicas_txt.SelectedItem + "', articular_pac ='" + articular_txt.Text + "', discapacidad_pac ='" + discapacidad_txt.Text + "', impresion_diagnostica_pac ='" + impresion_diagnostica.Text + "' Where codigo_pac = " + idPaciente;
                     SqlCommand sql = new SqlCommand(cadena, conn);
                     sql.ExecuteNonQuery();
                     editar = false;

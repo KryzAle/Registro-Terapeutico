@@ -54,7 +54,7 @@ namespace Registro_Terapeutico
                     {
                         if (!numero_repeticion_txt.Text.Equals(""))
                         {
-                            string cadena = "insert into Registro_Terapeutico(fecha_reg,repeticiones_reg,diagnostico_reg,observaciones_reg,codigo_pac,codigo_usu,codigo_ter) values('" + fecha_txt.Value + "'," + numero_repeticion_txt.Text + ", '" + Diagnostico_txt.Text + "','" + Observaciones_txt.Text + "'," + paciente_cmb.SelectedValue.ToString() + "," + FormLogin.usuarioId + "," + terapia_cmb.SelectedValue.ToString() + ")";
+                            string cadena = "insert into Registro_Terapeutico(fecha_reg,repeticiones_reg,diagnostico_reg,observaciones_reg,codigo_pac,codigo_usu,codigo_ter) values('" + fecha_txt.Value.Date.ToString("yyyy-MM-dd") + "'," + numero_repeticion_txt.Text + ", '" + Diagnostico_txt.Text + "','" + Observaciones_txt.Text + "'," + paciente_cmb.SelectedValue.ToString() + "," + FormLogin.usuarioId + "," + terapia_cmb.SelectedValue.ToString() + ")";
                             
                             SqlCommand sql = new SqlCommand(cadena, conn);
                             sql.ExecuteNonQuery();
@@ -110,10 +110,10 @@ namespace Registro_Terapeutico
             SqlDataAdapter adapter = new SqlDataAdapter(sql);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
-            DataRow fila = dt.NewRow();
-            fila["nombre_tip"] = "Seleccione";
+            //DataRow fila = dt.NewRow();
+            //fila["nombre_tip"] = "Seleccione";
             
-            dt.Rows.InsertAt(fila, 0);
+            //dt.Rows.InsertAt(fila, 0);
             tipo_cmb.ValueMember = "codigo_tip";
             tipo_cmb.DisplayMember = "nombre_tip";
             tipo_cmb.DataSource = dt;
@@ -201,7 +201,7 @@ namespace Registro_Terapeutico
                 SqlDataReader reader = sql.ExecuteReader();
                 if (reader.Read())
                 {
-                    MessageBox.Show(reader["sensor"].ToString());
+                    //MessageBox.Show(reader["sensor"].ToString());
                     if (reader["sensor"].ToString().Equals("1"))
                     {
                         empezar_btn.Enabled = true;

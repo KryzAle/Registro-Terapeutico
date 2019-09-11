@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.Registro_TerapeuticoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.RegistroTerapias = new Registro_Terapeutico.RegistroTerapias();
             this.nuevo_btn = new System.Windows.Forms.Button();
@@ -110,9 +110,9 @@
             // 
             // reportViewer1
             // 
-            reportDataSource1.Name = "RegistroTerapeuticoPorFechas";
-            reportDataSource1.Value = this.Registro_TerapeuticoBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "RegistroTerapeuticoPorFechas";
+            reportDataSource2.Value = this.Registro_TerapeuticoBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Registro_Terapeutico.terapiasPorFecha.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(25, 89);
             this.reportViewer1.Name = "reportViewer1";

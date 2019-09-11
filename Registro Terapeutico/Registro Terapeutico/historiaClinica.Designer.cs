@@ -65,16 +65,6 @@
             this.fecha_nacimiento = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cancelar_btn = new System.Windows.Forms.Button();
-            this.registro_btn = new System.Windows.Forms.Button();
-            this.pacientesRegistrados = new Registro_Terapeutico.PacientesRegistrados();
-            this.pacientesRegistradosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hogarAncianosDataSet1 = new Registro_Terapeutico.HogarAncianosDataSet1();
-            this.hogarAncianosDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.preferencias = new Registro_Terapeutico.Preferencias();
-            this.preferenciasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.modificar_btn = new System.Windows.Forms.Button();
-            this.eliminar_btn = new System.Windows.Forms.Button();
             this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -90,19 +80,29 @@
             this.impresiondiagnostica = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pacienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hogarAncianosDataSet3 = new Registro_Terapeutico.HogarAncianosDataSet3();
+            this.cancelar_btn = new System.Windows.Forms.Button();
+            this.registro_btn = new System.Windows.Forms.Button();
+            this.pacientesRegistrados = new Registro_Terapeutico.PacientesRegistrados();
+            this.pacientesRegistradosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hogarAncianosDataSet1 = new Registro_Terapeutico.HogarAncianosDataSet1();
+            this.hogarAncianosDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.preferencias = new Registro_Terapeutico.Preferencias();
+            this.preferenciasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.modificar_btn = new System.Windows.Forms.Button();
+            this.eliminar_btn = new System.Windows.Forms.Button();
             this.pacienteTableAdapter = new Registro_Terapeutico.HogarAncianosDataSet3TableAdapters.PacienteTableAdapter();
             this.groupBox1.SuspendLayout();
             this.marcha_box.SuspendLayout();
             this.dolor_box.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pacienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hogarAncianosDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacientesRegistrados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacientesRegistradosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hogarAncianosDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hogarAncianosDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.preferencias)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.preferenciasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pacienteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hogarAncianosDataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -289,6 +289,7 @@
             // 
             this.neurologicas_txt.FormattingEnabled = true;
             this.neurologicas_txt.Items.AddRange(new object[] {
+            "Seleccionar",
             "Coordinación",
             "Propiocepción"});
             this.neurologicas_txt.Location = new System.Drawing.Point(301, 169);
@@ -300,12 +301,13 @@
             // 
             this.muscular_txt.FormattingEnabled = true;
             this.muscular_txt.Items.AddRange(new object[] {
-            "0 Ausente",
-            "1 Mínima",
-            "2 Escasa",
-            "3 Regular",
-            "4 Buena",
-            "5 Normal"});
+            "Seleccione",
+            "0.-Ausente",
+            "1.-Mínima",
+            "2.-Escasa",
+            "3.- Regular",
+            "4.- Buena",
+            "5.- Normal"});
             this.muscular_txt.Location = new System.Drawing.Point(301, 130);
             this.muscular_txt.Name = "muscular_txt";
             this.muscular_txt.Size = new System.Drawing.Size(195, 21);
@@ -494,6 +496,107 @@
             this.codigo.ReadOnly = true;
             this.codigo.Visible = false;
             // 
+            // apellido
+            // 
+            this.apellido.DataPropertyName = "apellido_pac";
+            this.apellido.HeaderText = "Apellido";
+            this.apellido.Name = "apellido";
+            this.apellido.ReadOnly = true;
+            // 
+            // nombre
+            // 
+            this.nombre.DataPropertyName = "nombre_pac";
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            // 
+            // cedula
+            // 
+            this.cedula.DataPropertyName = "cedula_pac";
+            this.cedula.HeaderText = "Cedula";
+            this.cedula.Name = "cedula";
+            this.cedula.ReadOnly = true;
+            // 
+            // fechanacimiento
+            // 
+            this.fechanacimiento.DataPropertyName = "fecha_nacimiento_pac";
+            this.fechanacimiento.HeaderText = "Fecha Nacimiento";
+            this.fechanacimiento.Name = "fechanacimiento";
+            this.fechanacimiento.ReadOnly = true;
+            // 
+            // fecharegistro
+            // 
+            this.fecharegistro.DataPropertyName = "fecha_registro_pac";
+            this.fecharegistro.HeaderText = "Fecha Registro";
+            this.fecharegistro.Name = "fecharegistro";
+            this.fecharegistro.ReadOnly = true;
+            // 
+            // antecedentes
+            // 
+            this.antecedentes.DataPropertyName = "antecedentes_pac";
+            this.antecedentes.HeaderText = "Antecedentes";
+            this.antecedentes.Name = "antecedentes";
+            this.antecedentes.ReadOnly = true;
+            // 
+            // dolor
+            // 
+            this.dolor.DataPropertyName = "dolor_pac";
+            this.dolor.HeaderText = "% Dolor";
+            this.dolor.Name = "dolor";
+            this.dolor.ReadOnly = true;
+            // 
+            // marcha
+            // 
+            this.marcha.DataPropertyName = "marcha_pac";
+            this.marcha.HeaderText = "Marcha";
+            this.marcha.Name = "marcha";
+            this.marcha.ReadOnly = true;
+            // 
+            // muscular
+            // 
+            this.muscular.DataPropertyName = "muscular_pac";
+            this.muscular.HeaderText = "Muscular";
+            this.muscular.Name = "muscular";
+            this.muscular.ReadOnly = true;
+            // 
+            // neurologica
+            // 
+            this.neurologica.DataPropertyName = "neurologica_pac";
+            this.neurologica.HeaderText = "Neurologica";
+            this.neurologica.Name = "neurologica";
+            this.neurologica.ReadOnly = true;
+            // 
+            // articular
+            // 
+            this.articular.DataPropertyName = "articular_pac";
+            this.articular.HeaderText = "Articular";
+            this.articular.Name = "articular";
+            this.articular.ReadOnly = true;
+            // 
+            // discapacidad
+            // 
+            this.discapacidad.DataPropertyName = "discapacidad_pac";
+            this.discapacidad.HeaderText = "Discapacidad";
+            this.discapacidad.Name = "discapacidad";
+            this.discapacidad.ReadOnly = true;
+            // 
+            // impresiondiagnostica
+            // 
+            this.impresiondiagnostica.DataPropertyName = "impresion_diagnostica_pac";
+            this.impresiondiagnostica.HeaderText = "Impresion Diagnostica";
+            this.impresiondiagnostica.Name = "impresiondiagnostica";
+            this.impresiondiagnostica.ReadOnly = true;
+            // 
+            // pacienteBindingSource
+            // 
+            this.pacienteBindingSource.DataMember = "Paciente";
+            this.pacienteBindingSource.DataSource = this.hogarAncianosDataSet3;
+            // 
+            // hogarAncianosDataSet3
+            // 
+            this.hogarAncianosDataSet3.DataSetName = "HogarAncianosDataSet3";
+            this.hogarAncianosDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // cancelar_btn
             // 
             this.cancelar_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -601,107 +704,6 @@
             this.eliminar_btn.UseVisualStyleBackColor = true;
             this.eliminar_btn.Click += new System.EventHandler(this.Eliminar_btn_Click);
             // 
-            // apellido
-            // 
-            this.apellido.DataPropertyName = "apellido_pac";
-            this.apellido.HeaderText = "Apellido";
-            this.apellido.Name = "apellido";
-            this.apellido.ReadOnly = true;
-            // 
-            // nombre
-            // 
-            this.nombre.DataPropertyName = "nombre_pac";
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            // 
-            // cedula
-            // 
-            this.cedula.DataPropertyName = "cedula_pac";
-            this.cedula.HeaderText = "Cedula";
-            this.cedula.Name = "cedula";
-            this.cedula.ReadOnly = true;
-            // 
-            // fechanacimiento
-            // 
-            this.fechanacimiento.DataPropertyName = "fecha_nacimiento_pac";
-            this.fechanacimiento.HeaderText = "Fecha Nacimiento";
-            this.fechanacimiento.Name = "fechanacimiento";
-            this.fechanacimiento.ReadOnly = true;
-            // 
-            // fecharegistro
-            // 
-            this.fecharegistro.DataPropertyName = "fecha_registro_pac";
-            this.fecharegistro.HeaderText = "Fecha Registro";
-            this.fecharegistro.Name = "fecharegistro";
-            this.fecharegistro.ReadOnly = true;
-            // 
-            // antecedentes
-            // 
-            this.antecedentes.DataPropertyName = "antecedentes_pac";
-            this.antecedentes.HeaderText = "Antecedentes";
-            this.antecedentes.Name = "antecedentes";
-            this.antecedentes.ReadOnly = true;
-            // 
-            // dolor
-            // 
-            this.dolor.DataPropertyName = "dolor_pac";
-            this.dolor.HeaderText = "% Dolor";
-            this.dolor.Name = "dolor";
-            this.dolor.ReadOnly = true;
-            // 
-            // marcha
-            // 
-            this.marcha.DataPropertyName = "marcha_pac";
-            this.marcha.HeaderText = "Marcha";
-            this.marcha.Name = "marcha";
-            this.marcha.ReadOnly = true;
-            // 
-            // muscular
-            // 
-            this.muscular.DataPropertyName = "muscular_pac";
-            this.muscular.HeaderText = "Muscular";
-            this.muscular.Name = "muscular";
-            this.muscular.ReadOnly = true;
-            // 
-            // neurologica
-            // 
-            this.neurologica.DataPropertyName = "neurologica_pac";
-            this.neurologica.HeaderText = "Neurologica";
-            this.neurologica.Name = "neurologica";
-            this.neurologica.ReadOnly = true;
-            // 
-            // articular
-            // 
-            this.articular.DataPropertyName = "articular_pac";
-            this.articular.HeaderText = "Articular";
-            this.articular.Name = "articular";
-            this.articular.ReadOnly = true;
-            // 
-            // discapacidad
-            // 
-            this.discapacidad.DataPropertyName = "discapacidad_pac";
-            this.discapacidad.HeaderText = "Discapacidad";
-            this.discapacidad.Name = "discapacidad";
-            this.discapacidad.ReadOnly = true;
-            // 
-            // impresiondiagnostica
-            // 
-            this.impresiondiagnostica.DataPropertyName = "impresion_diagnostica_pac";
-            this.impresiondiagnostica.HeaderText = "Impresion Diagnostica";
-            this.impresiondiagnostica.Name = "impresiondiagnostica";
-            this.impresiondiagnostica.ReadOnly = true;
-            // 
-            // pacienteBindingSource
-            // 
-            this.pacienteBindingSource.DataMember = "Paciente";
-            this.pacienteBindingSource.DataSource = this.hogarAncianosDataSet3;
-            // 
-            // hogarAncianosDataSet3
-            // 
-            this.hogarAncianosDataSet3.DataSetName = "HogarAncianosDataSet3";
-            this.hogarAncianosDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // pacienteTableAdapter
             // 
             this.pacienteTableAdapter.ClearBeforeFill = true;
@@ -744,14 +746,14 @@
             this.dolor_box.ResumeLayout(false);
             this.dolor_box.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pacienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hogarAncianosDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacientesRegistrados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacientesRegistradosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hogarAncianosDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hogarAncianosDataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.preferencias)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.preferenciasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pacienteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hogarAncianosDataSet3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

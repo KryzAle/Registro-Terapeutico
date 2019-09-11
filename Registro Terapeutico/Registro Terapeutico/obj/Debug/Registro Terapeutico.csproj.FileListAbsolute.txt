@@ -229,7 +229,6 @@ E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\De
 E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.pdb
 E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.ReporteMensual.resources
 E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.ReportePacientesGlobales.resources
-E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csprojAssemblyReference.cache
 E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.ReporteTratamientosGrobales.resources
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.ReporteMensual.resources
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.ReportePacientesGlobales.resources

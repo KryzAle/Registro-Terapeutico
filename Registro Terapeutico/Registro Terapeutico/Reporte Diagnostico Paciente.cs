@@ -28,7 +28,7 @@ namespace Registro_Terapeutico
             if (paciente_cmb.SelectedIndex != 0)
             {
                 // TODO: esta línea de código carga datos en la tabla 'TratamientoPorPaciente.Registro_Terapeutico' Puede moverla o quitarla según sea necesario.
-            this.Registro_TerapeuticoTableAdapter.terapiasPorPaciente(this.TratamientoPorPaciente.Registro_Terapeutico, fecha_inicio.Value.ToString(), fecha_fin.Value.ToString(), Int32.Parse(paciente_cmb.SelectedValue.ToString()));
+            this.Registro_TerapeuticoTableAdapter.terapiasPorPaciente(this.TratamientoPorPaciente.Registro_Terapeutico, fecha_inicio.Value.Date.ToString("yyyy-MM-dd"), fecha_fin.Value.Date.ToString("yyyy-MM-dd"), Int32.Parse(paciente_cmb.SelectedValue.ToString()));
 
             this.reportViewer1.RefreshReport();
 
