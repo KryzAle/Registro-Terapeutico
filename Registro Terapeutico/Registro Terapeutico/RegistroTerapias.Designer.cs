@@ -963,22 +963,24 @@ namespace Registro_Terapeutico.RegistroTerapiasTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT        Registro_Terapeutico.fecha_reg, Paciente.nombre_pac, Registro_Terapeutico.diagnostico_reg, Tipo_Terapia.nombre_tip, Terapia.nombre_ter, Registro_Terapeutico.observaciones_reg
-FROM            Registro_Terapeutico INNER JOIN
-                         Paciente ON Registro_Terapeutico.codigo_pac = Paciente.codigo_pac AND Registro_Terapeutico.codigo_pac = Paciente.codigo_pac INNER JOIN
-                         Terapia ON Registro_Terapeutico.codigo_ter = Terapia.codigo_ter AND Registro_Terapeutico.codigo_ter = Terapia.codigo_ter INNER JOIN
-                         Tipo_Terapia ON Terapia.codigo_tip = Tipo_Terapia.codigo_tip AND Terapia.codigo_tip = Tipo_Terapia.codigo_tip
-WHERE        (Registro_Terapeutico.fecha_reg BETWEEN @fechaInicio AND @fechaFin)";
+            this._commandCollection[0].CommandText = @"SELECT Registro_Terapeutico.fecha_reg, Paciente.nombre_pac, Registro_Terapeutico.diagnostico_reg, Tipo_Terapia.nombre_tip, Terapia.nombre_ter, Registro_Terapeutico.observaciones_reg
+FROM     Registro_Terapeutico INNER JOIN
+                  Paciente ON Registro_Terapeutico.codigo_pac = Paciente.codigo_pac AND Registro_Terapeutico.codigo_pac = Paciente.codigo_pac INNER JOIN
+                  Terapia ON Registro_Terapeutico.codigo_ter = Terapia.codigo_ter AND Registro_Terapeutico.codigo_ter = Terapia.codigo_ter INNER JOIN
+                  Tipo_Terapia ON Terapia.codigo_tip = Tipo_Terapia.codigo_tip AND Terapia.codigo_tip = Tipo_Terapia.codigo_tip INNER JOIN
+                  Usuario ON Registro_Terapeutico.codigo_usu = Usuario.codigo_usu
+WHERE  (Registro_Terapeutico.fecha_reg BETWEEN @fechaInicio AND @fechaFin) AND (Registro_Terapeutico.codigo_usu = @usuario)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fechaInicio", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 0, 0, "fecha_reg", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fechaFin", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 0, 0, "fecha_reg", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@usuario", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "codigo_usu", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int terapiasPorFechas(RegistroTerapias.Registro_TerapeuticoDataTable dataTable, string fechaInicio, string fechaFin) {
+        public virtual int terapiasPorFechas(RegistroTerapias.Registro_TerapeuticoDataTable dataTable, string fechaInicio, string fechaFin, global::System.Nullable<int> usuario) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((fechaInicio == null)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
@@ -991,6 +993,12 @@ WHERE        (Registro_Terapeutico.fecha_reg BETWEEN @fechaInicio AND @fechaFin)
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(fechaFin));
+            }
+            if ((usuario.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((int)(usuario.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1003,7 +1011,7 @@ WHERE        (Registro_Terapeutico.fecha_reg BETWEEN @fechaInicio AND @fechaFin)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual RegistroTerapias.Registro_TerapeuticoDataTable GetData(string fechaInicio, string fechaFin) {
+        public virtual RegistroTerapias.Registro_TerapeuticoDataTable GetData(string fechaInicio, string fechaFin, global::System.Nullable<int> usuario) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((fechaInicio == null)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
@@ -1016,6 +1024,12 @@ WHERE        (Registro_Terapeutico.fecha_reg BETWEEN @fechaInicio AND @fechaFin)
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(fechaFin));
+            }
+            if ((usuario.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((int)(usuario.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             RegistroTerapias.Registro_TerapeuticoDataTable dataTable = new RegistroTerapias.Registro_TerapeuticoDataTable();
             this.Adapter.Fill(dataTable);

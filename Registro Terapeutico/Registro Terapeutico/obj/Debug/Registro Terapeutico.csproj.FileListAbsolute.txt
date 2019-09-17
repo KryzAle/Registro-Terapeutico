@@ -89,7 +89,6 @@ D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Interop.WMPLib.dll
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\AxInterop.WMPLib.dll
-D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csprojAssemblyReference.cache
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Interop.WMPLib.dll
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\AxInterop.WMPLib.dll
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csproj.ResolveComReference.cache
@@ -238,3 +237,5 @@ D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\
 E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\HogarAncianos.mdf
 E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\HogarAncianos_log.ldf
 E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.AgregarTipo.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.AgregarTipo.resources
+D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csprojAssemblyReference.cache
