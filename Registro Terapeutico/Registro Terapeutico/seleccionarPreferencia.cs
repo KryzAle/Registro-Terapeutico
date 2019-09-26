@@ -13,6 +13,7 @@ namespace Registro_Terapeutico
     public partial class seleccionarPreferencia : Form
     {
         SqlConnection conn;
+        string terapia;
         public seleccionarPreferencia()
         {
             InitializeComponent();
@@ -21,6 +22,12 @@ namespace Registro_Terapeutico
         {
             InitializeComponent();
             cargarVideo(data);
+        }
+        public seleccionarPreferencia(DataTable data,string sensor)
+        {
+            InitializeComponent();
+            cargarVideo(data);
+            terapia = sensor;
         }
         private void cargarVideo(DataTable paciente)
         {
@@ -38,7 +45,8 @@ namespace Registro_Terapeutico
 
         private void Registro_btn_Click(object sender, EventArgs e)
         {
-            Video video = new Video(preferencia_cmb.SelectedValue.ToString());
+            this.Close();
+            Video video = new Video(preferencia_cmb.SelectedValue.ToString(),terapia);
             video.Show();
         }
     }

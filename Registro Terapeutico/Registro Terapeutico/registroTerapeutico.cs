@@ -91,7 +91,7 @@ namespace Registro_Terapeutico
         }
         private void CargarDatosPaciente()
         {
-            string cadena = "Select codigo_pac,apellido_pac+SPACE(1)+ nombre_pac as NombreCompleto from Paciente";
+            string cadena = "Select codigo_pac,apellido_pac+SPACE(1)+ nombre_pac as NombreCompleto from Paciente ORDER BY apellido_pac ASC";
             SqlCommand sql = new SqlCommand(cadena, conn);
             SqlDataAdapter adapter = new SqlDataAdapter(sql);
             DataTable dt = new DataTable();
@@ -167,7 +167,7 @@ namespace Registro_Terapeutico
                 //si existe preferencias manda a seleccionar o manda un video randomico
                 if (dt.Rows.Count != 0)
                 {
-                    seleccionarPreferencia seleccionar = new seleccionarPreferencia(dt);
+                    seleccionarPreferencia seleccionar = new seleccionarPreferencia(dt,terapia_cmb.SelectedValue.ToString());
                     seleccionar.Show();
                 }
                 else
@@ -181,8 +181,7 @@ namespace Registro_Terapeutico
                     int rnd = random.Next(dt.Rows.Count);
                     DataRow dr = dt.Rows[rnd];
                     string ruta = dr["rutaVideo_pre"].ToString();
-                    Video video = new Video(ruta);
-
+                    Video video = new Video(ruta, terapia_cmb.SelectedValue.ToString());
                     video.Show();
                 }
 

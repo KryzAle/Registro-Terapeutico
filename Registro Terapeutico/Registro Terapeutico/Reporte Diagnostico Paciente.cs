@@ -46,7 +46,7 @@ namespace Registro_Terapeutico
         }
         private void CargarDatosPaciente()
         {
-            string cadena = "Select codigo_pac,apellido_pac+SPACE(1)+ nombre_pac as NombreCompleto from Paciente";
+            string cadena = "Select codigo_pac,apellido_pac+SPACE(1)+ nombre_pac as NombreCompleto from Paciente ORDER BY apellido_pac ASC";
             SqlCommand sql = new SqlCommand(cadena, conn);
             SqlDataAdapter adapter = new SqlDataAdapter(sql);
             DataTable dt = new DataTable();
