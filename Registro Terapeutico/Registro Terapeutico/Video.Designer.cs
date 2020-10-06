@@ -43,16 +43,16 @@
             // datatxt
             // 
             this.datatxt.Location = new System.Drawing.Point(0, 0);
+            this.datatxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.datatxt.Multiline = true;
             this.datatxt.Name = "datatxt";
-            this.datatxt.Size = new System.Drawing.Size(275, 67);
+            this.datatxt.Size = new System.Drawing.Size(207, 55);
             this.datatxt.TabIndex = 1;
             // 
             // axWindowsMediaPlayer1
             // 
             this.axWindowsMediaPlayer1.Enabled = true;
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 0);
-            this.axWindowsMediaPlayer1.Margin = new System.Windows.Forms.Padding(4);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(800, 450);
@@ -62,12 +62,11 @@
             // 
             // Video
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1367, 554);
+            this.ClientSize = new System.Drawing.Size(910, 473);
             this.Controls.Add(this.datatxt);
             this.Controls.Add(this.axWindowsMediaPlayer1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Video";

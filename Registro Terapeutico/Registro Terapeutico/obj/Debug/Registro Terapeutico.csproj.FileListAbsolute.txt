@@ -238,3 +238,95 @@ E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\De
 E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\HogarAncianos_log.ldf
 E:\Develop\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.AgregarTipo.resources
 D:\Developer\Registro Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.AgregarTipo.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\HogarAncianos.mdf
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\HogarAncianos_log.ldf
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Registro Terapeutico.exe.config
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Registro Terapeutico.exe
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Registro Terapeutico.pdb
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\EnvDTE.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\stdole.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Microsoft.MSXML.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\Interop.WMPLib.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csprojAssemblyReference.cache
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Interop.WMPLib.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csproj.ResolveComReference.cache
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.AgregarTipo.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.FormLogin.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Historia_Clinica.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.historiaClinica.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.menu.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.menuReportes.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.preferencias.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Properties.Resources.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Registro_Terapia.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Registro_Usuario.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.registroTerapeutico.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.ReporteMensual.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.ReportePacientesGlobales.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Reporte_Diagnostico_Paciente.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.ReporteTratamientosGrobales.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Reporte_Preferencias.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.seleccionarPreferencia.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro_Terapeutico.Video.resources
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csproj.GenerateResource.cache
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.csproj.CopyComplete
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.exe
+C:\Users\alexa\Documents\Git\Registro-Terapeutico\Registro Terapeutico\Registro Terapeutico\obj\Debug\Registro Terapeutico.pdb

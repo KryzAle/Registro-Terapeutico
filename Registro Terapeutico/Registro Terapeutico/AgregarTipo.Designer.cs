@@ -36,19 +36,19 @@
             this.tipo_TerapiaTableAdapter = new Registro_Terapeutico.TipoTerapiasTableAdapters.Tipo_TerapiaTableAdapter();
             this.tableAdapterManager = new Registro_Terapeutico.TipoTerapiasTableAdapters.TableAdapterManager();
             this.tipo_TerapiaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.nombre_tipTextBox = new System.Windows.Forms.TextBox();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tipo_TerapiaBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.nombre_tipTextBox = new System.Windows.Forms.TextBox();
             this.tipo_TerapiaDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +59,16 @@
             this.tipo_TerapiaBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tipo_TerapiaDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // nombre_tipLabel
+            // 
+            nombre_tipLabel.AutoSize = true;
+            nombre_tipLabel.Location = new System.Drawing.Point(44, 49);
+            nombre_tipLabel.Name = "nombre_tipLabel";
+            nombre_tipLabel.Size = new System.Drawing.Size(31, 13);
+            nombre_tipLabel.TabIndex = 1;
+            nombre_tipLabel.Text = "Tipo:";
+            nombre_tipLabel.Click += new System.EventHandler(this.Nombre_tipLabel_Click);
             // 
             // tipoTerapias
             // 
@@ -110,56 +120,6 @@
             this.tipo_TerapiaBindingNavigator.TabIndex = 0;
             this.tipo_TerapiaBindingNavigator.Text = "bindingNavigator1";
             // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Posición";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // nombre_tipLabel
-            // 
-            nombre_tipLabel.AutoSize = true;
-            nombre_tipLabel.Location = new System.Drawing.Point(44, 49);
-            nombre_tipLabel.Name = "nombre_tipLabel";
-            nombre_tipLabel.Size = new System.Drawing.Size(31, 13);
-            nombre_tipLabel.TabIndex = 1;
-            nombre_tipLabel.Text = "Tipo:";
-            nombre_tipLabel.Click += new System.EventHandler(this.Nombre_tipLabel_Click);
-            // 
-            // nombre_tipTextBox
-            // 
-            this.nombre_tipTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tipo_TerapiaBindingSource, "nombre_tip", true));
-            this.nombre_tipTextBox.Location = new System.Drawing.Point(109, 46);
-            this.nombre_tipTextBox.Name = "nombre_tipTextBox";
-            this.nombre_tipTextBox.Size = new System.Drawing.Size(100, 20);
-            this.nombre_tipTextBox.TabIndex = 2;
-            this.nombre_tipTextBox.TextChanged += new System.EventHandler(this.Nombre_tipTextBox_TextChanged);
-            // 
             // bindingNavigatorAddNewItem
             // 
             this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -168,6 +128,13 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
             // 
             // bindingNavigatorDeleteItem
             // 
@@ -196,6 +163,26 @@
             this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
             // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Posición";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
             // bindingNavigatorMoveNextItem
             // 
             this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -214,6 +201,11 @@
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Mover último";
             // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
             // tipo_TerapiaBindingNavigatorSaveItem
             // 
             this.tipo_TerapiaBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -222,6 +214,15 @@
             this.tipo_TerapiaBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.tipo_TerapiaBindingNavigatorSaveItem.Text = "Guardar datos";
             this.tipo_TerapiaBindingNavigatorSaveItem.Click += new System.EventHandler(this.Tipo_TerapiaBindingNavigatorSaveItem_Click);
+            // 
+            // nombre_tipTextBox
+            // 
+            this.nombre_tipTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tipo_TerapiaBindingSource, "nombre_tip", true));
+            this.nombre_tipTextBox.Location = new System.Drawing.Point(109, 46);
+            this.nombre_tipTextBox.Name = "nombre_tipTextBox";
+            this.nombre_tipTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nombre_tipTextBox.TabIndex = 2;
+            this.nombre_tipTextBox.TextChanged += new System.EventHandler(this.Nombre_tipTextBox_TextChanged);
             // 
             // tipo_TerapiaDataGridView
             // 
@@ -253,7 +254,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(309, 194);
+            this.ClientSize = new System.Drawing.Size(309, 210);
             this.Controls.Add(this.tipo_TerapiaDataGridView);
             this.Controls.Add(nombre_tipLabel);
             this.Controls.Add(this.nombre_tipTextBox);

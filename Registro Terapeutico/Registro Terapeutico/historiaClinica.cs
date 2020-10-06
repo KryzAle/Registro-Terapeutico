@@ -18,6 +18,7 @@ namespace Registro_Terapeutico
         SqlConnection conn;
         public historiaClinica()
         {
+            //se inicia la conexion con la base de datos HogarAncianos.mdf
             InitializeComponent();
             conn = new SqlConnection(Properties.Settings.Default.Conexion);
             conn.Open();
@@ -52,8 +53,10 @@ namespace Registro_Terapeutico
         {
 
         }
+        //funcion para validar los combobox de muscular y neurologica
         private bool validar()
         {
+            //valida los combobox y retorna verdadero cuando ha seleccionado datos.
             if (muscular_txt.SelectedIndex != 0)
             {
                 if (neurologicas_txt.SelectedIndex != 0)
@@ -73,28 +76,37 @@ namespace Registro_Terapeutico
             return false;
 
         }
+        //funcion llamada al momento de dar click en registrar
         private void Registro_btn_Click(object sender, EventArgs e)
         {
+            //valida los combobox
             if (validar())
             {
+                //valida si se va a editar o guardar por primera vez
                 if (!editar)
                 {
+                    //declara la cadena para insertar dentro de paciente
                     string cadena = "insert into Paciente(nombre_pac, apellido_pac, cedula_pac, fecha_nacimiento_pac, fecha_registro_pac, antecedentes_pac, dolor_pac, marcha_pac, muscular_pac, neurologica_pac, articular_pac, discapacidad_pac, impresion_diagnostica_pac) values('" + nombre_txt.Text + " " + "', '" + apellido_txt.Text + "', '" + cedula_txt.Text + "', '" + fecha_nacimiento.Value.Date.ToString("yyyy-MM-dd") + "', '" + fecha_registro.Value.Date.ToString("yyyy-MM-dd") + "', '" + antecedentes_txt.Text + "'," + getDolor() + ", '" + getMarcha() + "', '" + muscular_txt.SelectedItem + "', '" + neurologicas_txt.SelectedItem + "', '" + articular_txt.Text + "', '" + discapacidad_txt.Text + "', '" + impresion_diagnostica.Text + "')";
-                    //MessageBox.Show("fecha" + fecha_nacimiento.Value.Date.ToString("yyyy-MM-dd"));
+                    //declara la consulta SQL y la ejecuta
                     SqlCommand sql = new SqlCommand(cadena, conn);
                     sql.ExecuteNonQuery();
 
                 }
                 else
                 {
+                    //declara la cadena para actualizar el paciente
                     string cadena = "update Paciente set nombre_pac = '" + nombre_txt.Text + "', apellido_pac ='" + apellido_txt.Text + "', cedula_pac ='" + cedula_txt.Text + "', fecha_nacimiento_pac ='" + fecha_nacimiento.Value.Date.ToString("yyyy-MM-dd") + "', fecha_registro_pac ='" + fecha_registro.Value.Date.ToString("yyyy-MM-dd") + "', antecedentes_pac ='" + antecedentes_txt.Text + "', dolor_pac ='" + getDolor() + "', marcha_pac ='" + getMarcha() + "', muscular_pac ='" + muscular_txt.SelectedItem + "', neurologica_pac ='" + neurologicas_txt.SelectedItem + "', articular_pac ='" + articular_txt.Text + "', discapacidad_pac ='" + discapacidad_txt.Text + "', impresion_diagnostica_pac ='" + impresion_diagnostica.Text + "' Where codigo_pac = " + idPaciente;
+                    //declara la consulta SQL y la ejecuta
                     SqlCommand sql = new SqlCommand(cadena, conn);
                     sql.ExecuteNonQuery();
+                    //cambia la varible editar a falso y el id de paciente en 0;
                     editar = false;
                     idPaciente = "0";
                 }
+                //muestra un mensaje para agregar preferencias al paciente
                 MessageBox.Show("Registro Guardado Correctamente");
                 DialogResult res = MessageBox.Show("Desea Agregar las Preferencias Ahora ", "Pregunta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                //si se respondio a si agregar preferencias se lanza el formulario de preferencias caso contrario vuelve a lanzar historiaClinica
                 if (res == DialogResult.Yes)
                 {
                     this.Close();
@@ -109,8 +121,10 @@ namespace Registro_Terapeutico
                 }
             }
         }
+        //funcion que retorna el valor seleccionado en los radiobutton de dolor
         private string getDolor()
         {
+            //asignar el valor del radiobutton seleccionado a una variable string y la devuelve
             string dolor="";
             if (rd1.Checked) dolor = "0";
             if (rd2.Checked) dolor = "25";
@@ -120,6 +134,7 @@ namespace Registro_Terapeutico
 
             return dolor;
         }
+        //funcion que asigna el check al dolor obtenido para editar un paciente
         private void setDolor(string dolorS)
         {
             switch (dolorS)
@@ -143,14 +158,17 @@ namespace Registro_Terapeutico
                     break;
             }
         }
+        //funciona para obtener el valor de la marcha
         private string getMarcha()
         {
+            //asignar el valor del radiobutton seleccionado a una variable string y la devuelve
             string marcha = "";
             if (rm1.Checked) marcha = "No anda/No carga";
             if (rm2.Checked) marcha = "Anda con ayuda parcial";
             if (rm3.Checked) marcha = "Anda sin Ayuda";
             return marcha;
         }
+        //funcion que asigna el check a la marcha obtenidoa para editar un paciente
         private void setMarcha(string marchaS)
         {
             switch (marchaS)
@@ -169,6 +187,7 @@ namespace Registro_Terapeutico
             }
         }
 
+        //funcion que cierra el formulario al momento de dar click en el boton cancelar
         private void Cancelar_btn_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -180,12 +199,15 @@ namespace Registro_Terapeutico
             this.pacienteTableAdapter.Fill(this.hogarAncianosDataSet3.Paciente);
 
         }
-
+        //funcion llamada al dar click en el boton modificar carga todos los datos del paciente en el formulario
         private void Modificar_btn_Click(object sender, EventArgs e)
         {
+            //valida que se haya seleccionado una fila de la tabla de pacientes
             if (dataGridView1.SelectedRows.Count>0)
             {
+                //cambia el valor de editar a verdadero para actualizar el registro de paciente
                 editar = true;
+                //asigna a los campos de textos los valores del paciente seleccionado
                 idPaciente = dataGridView1.CurrentRow.Cells["codigo"].Value.ToString();
                 nombre_txt.Text= dataGridView1.CurrentRow.Cells["nombre"].Value.ToString();
                 apellido_txt.Text = dataGridView1.CurrentRow.Cells["apellido"].Value.ToString();
@@ -208,23 +230,31 @@ namespace Registro_Terapeutico
             }
         }
 
+        //funcion llamada al dar click en el boton eliminar elimina el paciente
         private void Eliminar_btn_Click(object sender, EventArgs e)
         {
+            //valida que se haya seleccionado una fila de la tabla de pacientes
             if (dataGridView1.SelectedRows.Count > 0)
             {
+                //obtiene el id del paciente seleccionado
                 idPaciente = dataGridView1.CurrentRow.Cells["codigo"].Value.ToString();
+                //declara una cadena de para eliminar los registros terapeuticos del paciente
                 string cadena = "delete from Registro_Terapeutico Where codigo_pac = " + idPaciente;
+                //ejecuta el comando Sql
                 SqlCommand sql = new SqlCommand(cadena, conn);
                 sql.ExecuteNonQuery();
-
+                //declara una cadena de para eliminar las preferencias del paciente
                 cadena = "delete from Preferencia Where codigo_pac = " + idPaciente;
+                //ejecuta el comando Sql
                 sql = new SqlCommand(cadena, conn);
                 sql.ExecuteNonQuery();
 
+                //declara una cadena de para eliminar los datos del paciente
                 cadena = "delete from Paciente Where codigo_pac = " + idPaciente;
+                //ejecuta el comando Sql
                 sql = new SqlCommand(cadena, conn);
                 sql.ExecuteNonQuery();
-
+                //vuelve a lanzar el formulario de Historia Clinica
                 MessageBox.Show("Borrado Correctamente");
                 this.Close();
                 historiaClinica historiaClinica = new historiaClinica();
